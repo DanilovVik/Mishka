@@ -30,52 +30,58 @@
         </ul>
       </nav>
     </section>
-    <div class="page-header__title">
-      <h2>Каталог товаров</h2>
-    </div>
   </header>
   <main>
+    <div class="page-title">
+      <h2>Каталог товаров</h2>
+    </div>
     <section class="catalog">
-      <div class="catalog__item">
+      <div class="product">
         <a href="#">
           <img src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
-          <h3 class="catalog__title">
-            Зайчик-попрыгайчик
-          </h3>
         </a>
-        <p class="catalog__description">
+        <h3 class="product__title">
+          <a href="#">
+            Зайчик-попрыгайчик
+          </a>
+        </h3>
+        <p class="product__description">
           Рост 30 см, вес 200 г
         </p>
-        <div class="catalog__price">
-          1 200 руб. <a class="catalog__buy" href="#">basket</a>
+        <div class="product__price">
+          1 200 руб. <a class="product__buy" href="#">basket</a>
         </div>
       </div>
-      <div class="catalog__item">
+      <div class="product">
         <a href="#">
           <img src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
-          <h3 class="catalog__title">
-            Корзинка для белья
-          </h3>
         </a>
-        <p class="catalog__description">
+        <h3 class="product__title">
+          <a href="#">
+            Корзинка для белья
+          </a>
+        </h3>
+        <p class="product__description">
           Диаметр 15 см, высота 10 см
         </p>
-        <div class="catalog__price">
-          690 руб. <a class="catalog__buy" href="#">basket</a>
+        <div class="product__price">
+          690 руб. <a class="product__buy" href="#">basket</a>
         </div>
       </div>
-      <div class="catalog__item">
+      <div class="product">
         <a href="#">
           <img src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
-          <h3 class="catalog__title">
-            Большая корзинка для игрушек
-          </h3>
         </a>
-        <p class="catalog__description">
+        <h3 class="product__title">
+          <a href="#">
+            Большая корзинка для игрушек
+          </a>
+        </h3>
+        <p class="product__description">
           Диаметр 30 см, высота 30 см
         </p>
-        <div class="catalog__price">
-          1 500 руб. <a class="catalog__buy" href="#">basket</a>
+        <div class="product__price">
+          1 500 руб. <a class="product__buy" href="#">basket</a>
         </div>
       </div>
     </section>
@@ -95,36 +101,38 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <ul class="list-social">
-        <li class="social-link social-link--in">
-          <a href="https://vk.com/htmlacademy">instagram</a>
-        </li>
-        <li class="social-link social-link--fb">
-          <a href="https://www.facebook.com/htmlacademy">facebook</a>
-        </li>
-        <li class="social-link social-link--tw">
-          <a href="https://www.instagram.com/htmlacademy">twitter</a>
-        </li>
-      </ul>
+      <div class="social">
+        <a class="social__link  social__link--in" href="https://vk.com/htmlacademy">instagram</a>
+        <a class="social__link  social__link--fb" href="https://www.facebook.com/htmlacademy">facebook</a>
+        <a class="social__link  social__link--tw" href="https://www.instagram.com/htmlacademy">twitter</a>
+      </div>
       <p class="page-footer__copyright">
         <a href="#">Разработано</a>
       </p>
     </div>
   </footer>
   <div class="modal-content">
-    <h2 class="modal-content__title">
-      Добавить в корзину
-    </h2>
-    <p class="modal-content__description">
-      Выберите размер:
-    </p>
-    <ul class="modal-content__list">
-      <li class="modal-content__item">S</li>
-      <li class="modal-content__item">M</li>
-      <li class="modal-content__item">L</li>
-    </ul>
-    <button class="btn btn--modal">Добавить</button>
+    <form class="modal-content__form" action="https://echo.htmlacademy.ru/" method="post">
+      <h2 class="modal-content__title">
+        Добавить в корзину
+      </h2>
+      <p class="modal-content__description">
+        Выберите размер:
+      </p>
+      <input class="modal-content__toggle" type="radio" name="size" value="S" id="S" checked>
+      <label class="modal-content__size" for="S">
+        S
+      </label>
+      <input class="modal-content__toggle" type="radio" name="size" value="M" id="M">
+      <label class="modal-content__size" for="M">
+        M
+      </label>
+      <input class="modal-content__toggle" type="radio" name="size" value="L" id="L">
+      <label class="modal-content__size" for="L">
+        L
+      </label>
+      <button class="btn btn--modal">Добавить</button>
+    </form>
   </div>
-  <div class="modal-content__modal-overlay"></div>
 </body>
 </html>
