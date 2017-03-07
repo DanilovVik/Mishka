@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Mishka</title>
+</head>
+<body>
+  <header class="page-header">
+    <section class="page-header__top-menu">
+      <div class="page-header__logo">
+        <a href="index.html">
+          <img src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
+        </a>
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle">Развернуть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item  main-nav__item--active">
+            <a>Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <main>
+    <div class="page-title">
+      <h2>Каталог товаров</h2>
+    </div>
+    <section class="catalog">
+      <div class="product">
+        <a href="#">
+          <img src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
+        </a>
+        <h3 class="product__title">
+          <a href="#">
+            Зайчик-попрыгайчик
+          </a>
+        </h3>
+        <p class="product__description">
+          Рост 30 см, вес 200 г
+        </p>
+        <div class="product__price">
+          1 200 руб. <a class="product__buy" href="#">basket</a>
+        </div>
+      </div>
+      <div class="product">
+        <a href="#">
+          <img src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
+        </a>
+        <h3 class="product__title">
+          <a href="#">
+            Корзинка для белья
+          </a>
+        </h3>
+        <p class="product__description">
+          Диаметр 15 см, высота 10 см
+        </p>
+        <div class="product__price">
+          690 руб. <a class="product__buy" href="#">basket</a>
+        </div>
+      </div>
+      <div class="product">
+        <a href="#">
+          <img src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
+        </a>
+        <h3 class="product__title">
+          <a href="#">
+            Большая корзинка для игрушек
+          </a>
+        </h3>
+        <p class="product__description">
+          Диаметр 30 см, высота 30 см
+        </p>
+        <div class="product__price">
+          1 500 руб. <a class="product__buy" href="#">basket</a>
+        </div>
+      </div>
+    </section>
+    <section class="video">
+      <h2 class="video__title">
+        Процесс производства
+      </h2>
+      <div class="video__player">
+        <img src="http://placehold.it/260x150" alt="Процесс производства">
+        <button class="play-btn" type="button">play</button>
+      </div>
+      <p class="video__description">
+        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+      </p>
+      <a class="btn" href="form.html">Сделать заказ</a>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="social">
+        <a class="social__link  social__link--in" href="https://vk.com/htmlacademy">instagram</a>
+        <a class="social__link  social__link--fb" href="https://www.facebook.com/htmlacademy">facebook</a>
+        <a class="social__link  social__link--tw" href="https://www.instagram.com/htmlacademy">twitter</a>
+      </div>
+      <p class="page-footer__copyright">
+        <a href="#">Разработано</a>
+      </p>
+    </div>
+  </footer>
+  <div class="modal-content">
+    <form class="modal-content__form" action="https://echo.htmlacademy.ru/" method="post">
+      <h2 class="modal-content__title">
+        Добавить в корзину
+      </h2>
+      <p class="modal-content__description">
+        Выберите размер:
+      </p>
+      <input class="modal-content__toggle" type="radio" name="size" value="S" id="S" checked>
+      <label class="modal-content__size" for="S">
+        S
+      </label>
+      <input class="modal-content__toggle" type="radio" name="size" value="M" id="M">
+      <label class="modal-content__size" for="M">
+        M
+      </label>
+      <input class="modal-content__toggle" type="radio" name="size" value="L" id="L">
+      <label class="modal-content__size" for="L">
+        L
+      </label>
+      <button class="btn btn--modal">Добавить</button>
+    </form>
+  </div>
+</body>
+</html>
