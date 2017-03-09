@@ -1,0 +1,34 @@
+.form {
+  box-shadow: 0 0 0 3px red inset; /*временное оформление*/
+  padding-bottom: 55px;
+}
+
+.form__description {
+  font-size: 13px;
+  color: #444444;
+}
+
+.form__title {
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+}
+
+.form__list {
+  list-style: none;
+  padding: 0;
+}
+
+.form__radio,
+.form__checkbox,
+.form__name {
+  line-height: 18px;
+  font-weight: 800;
+}
+
+.form__btn {
+  display: block;
+  margin: 0 auto;
+  padding-left: 45px;
+  padding-right: 45px;
+}

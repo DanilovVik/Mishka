@@ -1,0 +1,38 @@
+.product {
+  margin-bottom: 30px;
+}
+
+.product__info {
+  padding: 28px;
+  border: 1px solid #ededed;
+}
+
+.product {
+
+  box-shadow: 0 0 0 3px red inset; /*временное оформление*/
+}
+
+.product__title {
+  margin: 0;
+}
+
+.product__title--link {
+  font-size: 17px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.product__description {
+  font-size: 13px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.product__price {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.product__picture {
+  margin-bottom: -6px;
+}
