@@ -9,7 +9,7 @@
 <body class="page">
   <header class="page-header">
     <section class="page-header__top-menu">
-      <div class="container">
+      <div class="">
         <div class="page-header__logo">
           <a href="index.html">
             <img src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
@@ -19,16 +19,16 @@
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item  ">
+          <li class="main-nav__item">
             <a class="container" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="main-nav__item  ">
+          <li class="main-nav__item">
             <a class="container">Вязание на заказ</a>
           </li>
-          <li class="main-nav__item  ">
+          <li class="main-nav__item">
             <a class="container" href="#">Поиск по сайту</a>
           </li>
-          <li class="main-nav__item  ">
+          <li class="main-nav__item">
             <a class="container" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
@@ -36,7 +36,7 @@
     </section>
   </header>
   <main>
-    <div class="page-title">
+    <div class="page-title  container">
       <h2>Вязание на заказ</h2>
     </div>
     <form class="form  container" action="https://echo.htmlacademy.ru/" method="post">
@@ -114,20 +114,21 @@
           <textarea class="form__field  form__field--wishes" name="wishes" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </li>
       </ul>
+      <p class="form__note">
+        *Поля обязательны для заполнения
+      </p>
       <input class="form__btn  btn" type="submit" value="Отправить заказ">
     </form>
   </main>
-  <footer class="page-footer">
-    <div class="container">
-      <div class="social">
-        <a class="social__link  social__link--in" href="https://vk.com/htmlacademy">instagram</a>
-        <a class="social__link  social__link--fb" href="https://www.facebook.com/htmlacademy">facebook</a>
-        <a class="social__link  social__link--tw" href="https://www.instagram.com/htmlacademy">twitter</a>
-      </div>
-      <p class="page-footer__copyright">
-        <a class="page-footer__copyright--link" href="#">Разработано</a>
-      </p>
+  <footer class="page-footer  container">
+    <div class="social">
+      <a class="social__link  social__link--in" href="https://vk.com/htmlacademy">instagram</a>
+      <a class="social__link  social__link--fb" href="https://www.facebook.com/htmlacademy">facebook</a>
+      <a class="social__link  social__link--tw" href="https://www.instagram.com/htmlacademy">twitter</a>
     </div>
+    <p class="page-footer__copyright">
+      <a class="page-footer__copyright--link" href="#">Разработано</a>
+    </p>
   </footer>
 </body>
 </html>
