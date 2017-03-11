@@ -1,6 +1,8 @@
 .main-nav {
   // display: none;
   box-shadow: 0 0 0 3px green inset; /*временное оформление*/
+  width: 320px;
+  margin: 0 auto;
 }
 
 .main-nav__list {
@@ -19,6 +21,7 @@
   text-decoration: none;
   padding-top: 27px;
   padding-bottom: 27px;
-  padding-left: 46px;
+  padding-left: 76px;
+  padding-right: 0;
   color: #000000;
 }
