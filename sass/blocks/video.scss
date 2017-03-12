@@ -1,0 +1,25 @@
+.video {
+  padding-bottom: 58px;
+  box-shadow: 0 0 0 3px red inset; /*временное оформление*/
+}
+
+.video__title {
+  font-size: 17px;
+  padding-left: 90px;
+}
+
+.video__wrapper {
+  border: 1px solid #ececec;
+}
+
+.video__btn--order {
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.video__description {
+  font-size: 13px;
+  color: #444444;
+  padding: 30px;
+}

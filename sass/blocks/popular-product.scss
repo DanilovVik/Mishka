@@ -1,0 +1,44 @@
+.popular-product {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0 0 0 3px green inset; /*временное оформление*/
+}
+
+.popular-product__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 800;
+  margin: 0;
+
+  &--color {
+    font-size: 17px;
+    line-height: 20px;
+    color: #63d1bb;
+  }
+}
+
+.popular-product__description {
+  font-size: 15px;
+  color: #444444;
+}
+
+.popular-product__settings {
+  font-size: 15px;
+  color: #444444;
+  border-collapse: collapse;
+  margin-bottom: 28px;
+}
+
+.popular-product__item,
+.popular-product__value {
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 28px;
+}
+
+.popular-product__price {
+  color: #444444;
+  font-weight: 800;
+  text-align: center;
+}

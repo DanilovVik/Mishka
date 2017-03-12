@@ -1,0 +1,28 @@
+.reviews {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  box-shadow: 0 0 0 3px green inset; /*временное оформление*/
+}
+
+.reviews__title {
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.reviews__comment {
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.reviews__author-name {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.reviews__author-account {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 400;
+}

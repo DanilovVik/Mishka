@@ -1,0 +1,22 @@
+.modal-content {
+  display: none;
+  background-color: #ffffff;
+  padding-top: 35px;
+  padding-bottom: 46px;
+  box-shadow: 0 0 0 3px red inset; /*временное оформление*/
+}
+
+.modal-content__title {
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.modal-content__description {
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+  text-align: center;
+}

@@ -1,0 +1,34 @@
+.contents {
+  background-image: url(../img/hero-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  padding-top: 77px;
+  box-shadow: 0 0 0 3px red inset; /*временное оформление*/
+}
+
+.contents__title {
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 132px;
+}
+
+.contents__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 800;
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin-left: -30px;
+
+  &--interior {
+    background-color: #63d1bb;
+  }
+
+  &--toys {
+    background-color: #56c3b2;
+  }
+
+}
