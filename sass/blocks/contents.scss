@@ -5,7 +5,6 @@
 
   box-shadow: 0 0 0 3px red inset; /*временное оформление*/
   background-color: #f9f9f9;
-  // @include clearfix;
   width: 320px;
   margin: 0 auto;
 }
@@ -33,7 +32,6 @@
   padding-left: 30px;
   padding-right: 160px;
   width: 130px;
-
 
   &--interior {
     background-color: #63d1bb;
@@ -75,71 +73,9 @@
       width: 167px;
     }
   }
-
 }
 
 @media (min-width: 1150px) {
   .contents__link {
     padding-right: 322px;
   }
-}
-
-//  @media (min-width: 768px) {
-//   .contents__list li {
-//     display: inline-block;
-//   }
-
-//   .contents__link {
-//     font-size: 20px;
-//     line-height: 30px;
-//     width: 167px;
-//     padding: 35px;
-//     padding-right: 15px;
-//   }
-
-//   .contents__list {
-//   margin-left: -50px;
-// }
-//  }
-
-// @media (min-width: 768px) {
-//   .contents {
-//   min-height: 746px; /*временное оформление*/
-// }
-//   .contents__link {
-//     margin: 0;
-//   &--interior {
-//     float: left;
-//     width: 234px;
-//   }
-
-//   &--toys {
-//    float: right;
-//    width: 234px;
-//   }
-
-// }
-
-
-// }
-
-
-// @media (min-width: 1200px) {
-//   .contents__link {
-//     margin: 0;
-//   &--interior {
-//     float: left;
-//     width: 425px;
-//   }
-
-//   &--toys {
-//    float: right;
-//    width: 425px;
-//   }
-
-// }
-
-
-
-// }
-
