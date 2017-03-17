@@ -2,6 +2,7 @@
   padding-top: 40px;
   padding-bottom: 39px;
   box-shadow: 0 0 0 3px red inset; /*временное оформление*/
+  @include container;
 }
 
 .contacts__title {
@@ -23,7 +24,99 @@
 }
 
 .contacts__map {
-  width: 320px;
   margin-left: -30px;
   margin-bottom: 35px;
+}
+
+@media (min-width: 768px) {
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 60px;
+  }
+
+  .contacts__map {
+    margin-left: -50px;
+  }
+
+  .contacts__map img {
+    width: 768px; /*временное оформление*/
+    height: 457px; /*временное оформление*/
+  }
+
+  .contacts__btn {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  .contacts__address {
+    font-size: 17px;
+    width: 668px;
+  }
+
+  .contacts__address tr {
+    display: block;
+    width: 283px;
+  }
+
+  .contacts__email {
+    float: left;
+  }
+
+  .contacts__street {
+    float: right;
+    padding-right: 35px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .contacts {
+    // @include clearfix;
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 100px;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    line-height: 145px;
+    margin-left: 175px;
+  }
+
+  .contacts__address {
+    width: 298px;
+    margin-left: 175px;
+  }
+
+  .contacts__address tr {
+    display: table-row;
+  }
+
+  .contacts__email {
+    float: none;
+    margin-bottom: 50px;
+  }
+
+  .contacts__street {
+    float: none;
+    padding-right: 35px;
+  }
+
+  .contacts__map {
+    margin: 0;
+    position: absolute;
+    top: 70px;
+    right: 50px;
+  }
+
+  .contacts__map img {
+    width: 525px; /*временное оформление*/
+    height: 457px; /*временное оформление*/
+  }
+
+  .contacts__btn {
+    width: 260px;
+    margin: 0;
+    margin-left: 175px;
+  }
 }

@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Mishka</title>
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
@@ -13,71 +14,90 @@
         <img src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
       </div>
       <button class="page-header__toggle">Развернуть меню</button>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Поиск по сайту</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </nav>
     </section>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item  main-nav__item--catalog">
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="main-nav__item  main-nav__item--order">
+          <a href="form.html">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="main-nav__user-list">
+        <li class="main-nav__item  main-nav__item--search">
+          <a href="#">Поиск по сайту</a>
+        </li>
+        <li class="main-nav__item  main-nav__item--basket">
+          <a href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list-promo">
+        <li class="main-nav__item  main-nav__item--new-product">
+          <a href="#">Новые поступления</a>
+        </li>
+        <li class="main-nav__item  main-nav__item--sale">
+          <a href="#">Распродажа</a>
+        </li>
+      </ul>
+      <ul class="main-nav__list-shipping">
+        <li class="main-nav__item">
+          <a href="#">Бесплатная доставка по России</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main>
-    <section class="contents  container">
+    <section class="contents">
       <h2 class="contents__title">Милые штуки ручной работы для дома</h2>
-      <a class="contents__link  contents__link--interior  container" href="#">Предметы интерьера</a>
-      <a class="contents__link  contents__link--toys  container" href="#">Детские игрушки</a>
+      <a class="contents__link  contents__link--interior" href="#">Предметы интерьера</a>
+      <a class="contents__link  contents__link--toys" href="#">Детские игрушки</a>
     </section>
-    <section class="popular-product  container">
-      <h2 class="popular-product__title">Вязаные корзинки</h2>
-      <b class="popular-product__title  popular-product__title--color">товар недели</b>
-      <p class="popular-product__description">
-        Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-      </p>
-      <table class="popular-product__settings">
-        <tr class="popular-product__line">
-          <td class="popular-product__item">
-            Цвет:
-          </td>
-          <td class="popular-product__value">
-            «Тиффани»/серый
-          </td>
-        </tr>
-        <tr class="popular-product__line">
-          <td class="popular-product__item">
-            Диаметр:
-          </td>
-          <td class="popular-product__value">
-            25 см
-          </td>
-        </tr>
-        <tr class="popular-product__line">
-          <td class="popular-product__item">
-            Высота:
-          </td>
-          <td class="popular-product__value">
-            15 см
-          </td>
-        </tr>
-      </table>
-      <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
-      <p class="popular-product__price">
-        Цена: 990 руб.
-      </p>
-      <a class="btn" href="#">Заказать</a>
+    <section class="popular-product">
+      <div class="popular-product__title-wrapper">
+        <h2 class="popular-product__title--main">Вязаные корзинки</h2>
+        <b class="popular-product__title--color">товар недели</b>
+      </div>
+      <div class="popular-product__description-wrapper">
+        <p class="popular-product__description">
+          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+        </p>
+        <table class="popular-product__settings">
+          <tr class="popular-product__line">
+            <td class="popular-product__item">
+              Цвет:
+            </td>
+            <td class="popular-product__value">
+              «Тиффани»/серый
+            </td>
+          </tr>
+          <tr class="popular-product__line">
+            <td class="popular-product__item">
+              Диаметр:
+            </td>
+            <td class="popular-product__value">
+              25 см
+            </td>
+          </tr>
+          <tr class="popular-product__line">
+            <td class="popular-product__item">
+              Высота:
+            </td>
+            <td class="popular-product__value">
+              15 см
+            </td>
+          </tr>
+        </table>
+        <img class="popular-product__picture" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
+        <p class="popular-product__price">
+          Цена: 990 руб.
+        </p>
+        <a class="btn" href="#">Заказать</a>
+      </div>
     </section>
-    <section class="about  container">
+    <section class="about">
       <h2 class="about__title">Коротко о нас:</h2>
-      <ul class="about__list">
+      <ul class="about__list  about__list--column-1">
         <li class="about__item  about__item--icon-1">
           Экологически чистые материалы
         </li>
@@ -87,6 +107,8 @@
         <li class="about__item  about__item--icon-3">
           Увеличивает лайки на фотографиях
         </li>
+      </ul>
+      <ul class="about__list  about__list--column-2">
         <li class="about__item  about__item--icon-4">
           Связано вручную с любовью и умилением
         </li>
@@ -98,7 +120,7 @@
         </li>
       </ul>
     </section>
-    <section class="reviews  container">
+    <section class="reviews">
       <h2 class="reviews__title">Отзывы</h2>
       <div class="reviews__content">
         <p class="reviews__comment">
@@ -108,11 +130,13 @@
           Анастасия Красильникова <span class="reviews__author-account">@misssssiskras</span>
         </p>
       </div>
-      <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-      <button class="reviews__next" type="button">Следующий отзыв</button>
-      <a class="btn" href="add-review.html">Написать</a>
+      <div class="reviews__slider">
+        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+        <button class="reviews__next" type="button">Следующий отзыв</button>
+      </div>
+      <a class="btn  btn-reviews" href="add-review.html">Написать</a>
     </section>
-    <section class="contacts  container">
+    <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
       <table class="contacts__address">
         <tr class="contacts__email">
@@ -129,12 +153,15 @@
         </tr>
       </table>
       <div class="contacts__map">
-        <img src="img/map-mobile@1x.jpg" alt="карта">
+        <img src="http://placehold.it/320x457" alt="карта">
       </div>
-      <a class="btn" href="feedback-form.html">Напишите нам</a>
+      <a class="btn  contacts__btn" href="feedback-form.html">Напишите нам</a>
     </section>
   </main>
-  <footer class="page-footer  container">
+  <footer class="page-footer">
+    <div class="page-footer__footer-logo">
+      <img src="http://placehold.it/102x34" width="102" height="34" alt="Логотип Мишка">
+    </div>
     <div class="social">
       <a class="social__link  social__link--in" href="https://vk.com/htmlacademy">instagram</a>
       <a class="social__link  social__link--fb" href="https://www.facebook.com/htmlacademy">facebook</a>

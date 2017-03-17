@@ -1,27 +1,39 @@
 .contents {
-  background-image: url(../img/hero-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 0%;
-  padding-top: 77px;
+  // background-image: url(../img/hero-mobile@1x.jpg);
+  // background-repeat: no-repeat;
+  // background-position: 50% 0%;
+
   box-shadow: 0 0 0 3px red inset; /*временное оформление*/
+  background-color: #f9f9f9;
+  // @include clearfix;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .contents__title {
+  padding-top: 77px;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+  margin: 0;
   margin-bottom: 132px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .contents__link {
   text-decoration: none;
   color: #ffffff;
   font-size: 19px;
+  line-height: 24px;
   font-weight: 800;
   display: block;
   padding-top: 27px;
   padding-bottom: 27px;
-  margin-left: -30px;
+  padding-left: 30px;
+  padding-right: 160px;
+  width: 130px;
+
 
   &--interior {
     background-color: #63d1bb;
@@ -30,5 +42,104 @@
   &--toys {
     background-color: #56c3b2;
   }
+}
+
+@media (min-width: 768px) {
+  .contents {
+    width: 768px;
+    @include container;
+    @include clearfix;
+  }
+
+  .contents__title {
+    font-size: 43px;
+    line-height: 50px;
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 370px;
+  }
+
+  .contents__link {
+    font-size: 20px;
+    line-height: 30px;
+    display: inline-block;
+    padding-left: 36px;
+    padding-right: 131px;
+    &--interior {
+      float: left;
+      width: 167px;
+    }
+
+    &--toys {
+      float: right;
+      width: 167px;
+    }
+  }
 
 }
+
+@media (min-width: 1150px) {
+  .contents__link {
+    padding-right: 322px;
+  }
+}
+
+//  @media (min-width: 768px) {
+//   .contents__list li {
+//     display: inline-block;
+//   }
+
+//   .contents__link {
+//     font-size: 20px;
+//     line-height: 30px;
+//     width: 167px;
+//     padding: 35px;
+//     padding-right: 15px;
+//   }
+
+//   .contents__list {
+//   margin-left: -50px;
+// }
+//  }
+
+// @media (min-width: 768px) {
+//   .contents {
+//   min-height: 746px; /*временное оформление*/
+// }
+//   .contents__link {
+//     margin: 0;
+//   &--interior {
+//     float: left;
+//     width: 234px;
+//   }
+
+//   &--toys {
+//    float: right;
+//    width: 234px;
+//   }
+
+// }
+
+
+// }
+
+
+// @media (min-width: 1200px) {
+//   .contents__link {
+//     margin: 0;
+//   &--interior {
+//     float: left;
+//     width: 425px;
+//   }
+
+//   &--toys {
+//    float: right;
+//    width: 425px;
+//   }
+
+// }
+
+
+
+// }
+

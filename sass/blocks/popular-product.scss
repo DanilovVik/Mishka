@@ -2,18 +2,22 @@
   padding-top: 30px;
   padding-bottom: 30px;
   box-shadow: 0 0 0 3px green inset; /*временное оформление*/
+  @include container;
 }
 
 .popular-product__title {
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: 800;
-  margin: 0;
+  &--main {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 800;
+    margin: 0;
+  }
 
   &--color {
     font-size: 17px;
     line-height: 20px;
     color: #63d1bb;
+    text-transform: uppercase;
   }
 }
 
@@ -41,4 +45,101 @@
   color: #444444;
   font-weight: 800;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .popular-product {
+    position: relative;
+  }
+
+  .popular-product__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+  }
+
+  .popular-product__title {
+    &--main {
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    &--color {
+      padding-top: 9px;
+      width: 80px;
+      line-height: 17px;
+      text-align: center;
+    }
+  }
+
+  .popular-product__description-wrapper {
+    width: 290px;
+    margin-right: 44px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popular-product__picture {
+    width: 333px;/*временное оформление*/
+    height: 404px;/*временное оформление*/
+    position: absolute;
+    right: 0;
+    padding-top: 20px;
+    padding-right: 50px;
+  }
+
+  .popular-product__description {
+    margin-bottom: 40px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .popular-product__settings {
+    margin-bottom: 22px;
+    width: 290px;
+  }
+
+  .popular-product__price {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .popular-product__picture {
+    width: 525px;/*временное оформление*/
+    height: 636px;/*временное оформление*/
+    top: 60px;
+  }
+
+  .popular-product__title-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    margin-bottom: 50px;
+    padding-top: 85px;
+  }
+
+  .popular-product__title {
+    &--main {
+      font-size: 53px;
+      line-height: 57px;
+      z-index: 1;
+    }
+
+    &--color {
+      padding-top: 15px;
+      padding-right: 47px;
+      padding-left: 47px;
+    }
+  }
+
+  .popular-product__description-wrapper {
+    padding-left: 175px;
+    width: 292px;
+  }
+
+  .popular-product__settings {
+    width: 292px;
+    margin-bottom: 100px;
+  }
 }

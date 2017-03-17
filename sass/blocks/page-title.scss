@@ -4,10 +4,31 @@
   padding-top: 75px;
   padding-bottom: 75px;
   box-shadow: 0 0 0 3px red inset; /*временное оформление*/
+  @include container;
+
+  &--content {
+    font-size: 27px;
+    line-height: 30px;
+    margin: 0;
+  }
 }
 
-.page-title--content {
-  font-size: 27px;
-  line-height: 30px;
-  margin: 0;
+@media (min-width: 768px) {
+  .page-title {
+    &--content {
+      font-size: 43px;
+      line-height: 50px;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-title {
+    &--content {
+      font-size: 53px;
+      line-height: 57px;
+      margin: 0;
+    }
+  }
 }

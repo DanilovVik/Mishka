@@ -1,6 +1,7 @@
 .about {
   padding-top: 30px;
   box-shadow: 0 0 0 3px red inset; /*временное оформление*/
+  @include container;
 }
 
 .about__title {
@@ -20,4 +21,39 @@
   line-height: 20px;
   font-weight: 800;
   padding-top: 85px;
+}
+
+@media (min-width: 768px) {
+  .about {
+    padding-bottom: 75px;
+  }
+
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__item {
+    font-size: 20px;
+    line-height: 22px;
+    padding-top: 100px;
+    width: 300px;
+  }
+
+  .about__list {
+    width: 331px;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1150px) {
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-left: 175px;
+  }
+
+  .about__list--column-1 {
+    padding-left: 175px;
+  }
 }

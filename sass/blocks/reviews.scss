@@ -2,6 +2,7 @@
   padding-top: 60px;
   padding-bottom: 40px;
   box-shadow: 0 0 0 3px green inset; /*временное оформление*/
+  @include container
 }
 
 .reviews__title {
@@ -25,4 +26,54 @@
   font-size: 17px;
   line-height: 30px;
   font-weight: 400;
+}
+
+.reviews__slider {
+  width: 260px; /*временное оформление*/
+  margin-bottom: 40px;
+  border: 1px solid #ececec;
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    position: relative;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .reviews__comment {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .reviews__author-name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-reviews {
+    width: 174px;
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+  }
+
+  .reviews__slider  {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 1150px) {
+   .reviews__comment {
+    padding-right: 100px;
+  }
 }

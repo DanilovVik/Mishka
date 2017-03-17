@@ -1,6 +1,39 @@
 .page-header {
   width: 320px;
   margin: 0 auto;
-  box-shadow: 0 0 0 3px red inset; /*временное оформление*/
+  background-color: #f9f9f9;/*временное оформление*/
+}
+
+.page-header__top-menu {
+  background-color: #aad9ff;/*временное оформление*/
+  min-height: 79px; /*временное оформление*/
   border-bottom: 1px solid #ececec;
+  @include clearfix;
+}
+
+.page-header__logo {
+  padding-top: 20px;
+  width: 86px;
+}
+
+.page-header__toggle {
+  float: right;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    width: 768px;
+    @include container;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-header__logo {
+    width: 86px;
+    margin: 0 auto;
+  }
 }
