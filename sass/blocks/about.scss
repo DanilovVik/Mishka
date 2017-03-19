@@ -1,7 +1,14 @@
 .about {
-  padding-top: 30px;
-  box-shadow: 0 0 0 3px red inset; /*временное оформление*/
-  @include container;
+  // padding-top: 30px;
+  // padding-bottom: 20px;
+  // box-shadow: 0 0 0 3px red inset; /*временное оформление*/
+  width: 320px;
+  margin: 0 auto;
+}
+
+.about__wrapper {
+  padding: 30px;
+  background-color: #E3DBFF; /*временное оформление*/
 }
 
 .about__title {
@@ -25,7 +32,16 @@
 
 @media (min-width: 768px) {
   .about {
+    width: auto;
+    margin: 0;
+  }
+
+  .about__wrapper {
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
     padding-bottom: 75px;
+    @include container;
   }
 
   .about__title {

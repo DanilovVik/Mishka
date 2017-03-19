@@ -1,8 +1,15 @@
 .reviews {
-  padding-top: 60px;
-  padding-bottom: 40px;
-  box-shadow: 0 0 0 3px green inset; /*временное оформление*/
-  @include container
+  // box-shadow: 0 0 0 3px green inset; /*временное оформление*/
+  // padding-top: 60px;
+  // padding-bottom: 40px;
+  // @include container;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.reviews__wrapper {
+  padding: 30px;
+  background-color: #DBFFF5; /*временное оформление*/
 }
 
 .reviews__title {
@@ -36,10 +43,21 @@
 
 @media (min-width: 768px) {
   .reviews {
+    // padding-top: 80px;
+    // display: flex;
+    // flex-direction: column;
+    // position: relative;
+    width: auto;
+    margin: 0;
+  }
+
+  .reviews__wrapper {
+    padding: 0;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
     position: relative;
+    @include container;
   }
 
   .reviews__title {
@@ -61,14 +79,14 @@
     width: 174px;
     position: absolute;
     right: 0;
-    margin-right: 50px;
+    // margin-right: 50px;
   }
 
   .reviews__slider  {
     position: absolute;
     right: 0;
-    bottom: 20px;
-    margin-right: 50px;
+    bottom: -20px;
+    // margin-right: 50px;
   }
 }
 

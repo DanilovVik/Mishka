@@ -1,12 +1,22 @@
 .video {
-  padding-bottom: 58px;
-  box-shadow: 0 0 0 3px red inset; /*временное оформление*/
-  @include container;
+  // padding-top: 26px;
+  // padding-bottom: 58px;
+  // box-shadow: 0 0 0 3px red inset; /*временное оформление*/
+  width: 320px;
+  margin: 0 auto;
 }
 
 .video__wrapper {
-  border: 1px solid #ececec;
+  background-color: #F7FFDB; /*временное оформление*/
   position: relative;
+  padding: 30px;
+  // @include container;
+}
+
+.video__content {
+  // width: 260px;
+  // margin: 0 auto;
+  border: 1px solid #ececec;
 }
 
 .video__title {
@@ -14,7 +24,8 @@
   padding-left: 89px;
   padding-top: 10px;
   position: absolute;
-  top: 0;
+  top: 30px;
+  left: 30px;
 }
 
 .video__description {
@@ -23,27 +34,34 @@
 }
 
 .video__description-wrapper {
-  padding: 33px;
-}
-
-.video__btn--order {
-  margin: 0 auto;
-  margin-bottom: 30px;
+  padding: 30px;
+  padding-top: 0;
 }
 
 .video__player {
-  padding-top: 98px;
+  margin-left: -1px;
+  margin-top: 98px;
   position: relative;
 }
 
 .play-btn {
   position: absolute;
-  top: 50%;/*временное оформление*/
-  left: 50%;/*временное оформление*/
+  top: 40%;/*временное оформление*/
+  left: 40%;/*временное оформление*/
 }
 
 @media (min-width: 768px) {
+  .video {
+    width: auto;
+    margin: 0;
+  }
+
   .video__wrapper {
+    @include container;
+    padding: 0;
+  }
+
+  .video__content {
     display: flex;
     flex-direction: column;
   }
@@ -51,11 +69,10 @@
   .video__title {
     font-size: 20px;
     padding-left: 90px;
+    margin-bottom: 30px;
     position: relative;
-  }
-
-  .video__description-wrapper {
-    padding: 42px;
+    left: 0;
+    top: 0;
   }
 
   .video__description {
@@ -63,12 +80,9 @@
     line-height: 30px;
   }
 
-  .video__btn--order {
-    margin: 0 auto;
-    margin-bottom: 46px;
-  }
-
   .video__player {
+    margin: 0;
+    margin-left: -1px;
     padding-top: 0;
   }
 
@@ -79,7 +93,7 @@
 }
 
 @media (min-width: 1150px) {
-  .video__wrapper {
+  .video__content {
     display: flex;
     flex-direction: row;
   }
@@ -97,11 +111,6 @@
   .video__description {
     font-size: 15px;
     margin-bottom: 45px;
-  }
-
-  .video__btn--order {
-    margin: 0 auto;
-    margin-bottom: 0;
   }
 
   .video__player img {

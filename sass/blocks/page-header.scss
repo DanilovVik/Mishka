@@ -1,14 +1,21 @@
 .page-header {
   width: 320px;
   margin: 0 auto;
-  background-color: #f9f9f9;/*временное оформление*/
+  // background-color: #f9f9f9;/*временное оформление*/
+}
+
+.page-header__wrapper {
+  position: relative;
+  background-color: #E3DBFF; /*временное оформление*/
 }
 
 .page-header__top-menu {
   background-color: #aad9ff;/*временное оформление*/
   min-height: 79px; /*временное оформление*/
   border-bottom: 1px solid #ececec;
-  @include clearfix;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .page-header__logo {
@@ -16,18 +23,35 @@
   width: 86px;
 }
 
-.page-header__toggle {
-  float: right;
+.page-header__shipping {
+  display: none;
 }
 
 @media (min-width: 768px) {
   .page-header {
-    width: 768px;
+    width: auto;
+    margin: 0;
+    // @include container;
+  }
+
+  .page-header__wrapper {
     @include container;
+
   }
 
   .page-header__toggle {
     display: none;
+  }
+
+  .page-header__shipping {
+    display: block;
+    background-color: #ffe5fe;
+    font-size: 15px;
+    font-weight: 400;
+    color: #444444;
+    position: absolute;
+    bottom: -15px;
+    right: 0;
   }
 }
 

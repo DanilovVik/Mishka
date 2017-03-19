@@ -1,8 +1,17 @@
 .form {
-  box-shadow: 0 0 0 3px red inset; /*временное оформление*/
+  // box-shadow: 0 0 0 3px red inset; /*временное оформление*/
+  // padding-bottom: 55px;
+  // padding-top: 27px;
+  // @include container;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.form__wrapper {
+  padding: 30px;
   padding-bottom: 55px;
   padding-top: 27px;
-  @include container;
+  background-color: #F7FFDB; /*временное оформление*/
 }
 
 .form__description {
@@ -37,12 +46,31 @@
   padding-right: 45px;
 }
 
+.form__field {
+  color: #444444;
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+  &:focus {
+    border-bottom: 2px solid #62d1ba;
+  }
+}
+
 .form__field--wishes {
   width: 225px;
   height: 108px;
   resize: none;
   border: 2px solid #444444;
   padding: 15px;
+}
+
+.form__field--wishes {
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
+  &:focus {
+    border: 2px solid #62d1ba;
+  }
 }
 
 .form__note {
@@ -93,6 +121,14 @@
   border: 2px solid #444444;
 }
 
+.form__radio:hover::before {
+  border: 2px solid #62d1ba;
+}
+
+.form__radio:active::before {
+  border: 2px solid #c7c7c7;
+}
+
 .form__list--type input[type="radio"]:checked + label::after {
   content: "";
   position: absolute;
@@ -109,6 +145,18 @@
 }
 
 @media (min-width: 768px)  {
+  .form {
+    width: auto;
+    margin: 0;
+  }
+
+  .form__wrapper {
+    padding: 0px;
+    padding-bottom: 55px;
+    padding-top: 27px;
+    @include container;
+  }
+
   .form__description {
     font-size: 17px;
     line-height: 30px;
@@ -226,5 +274,4 @@
     margin-left: 175px;
     margin-bottom: 55px;
   }
-
 }

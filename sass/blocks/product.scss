@@ -1,5 +1,6 @@
 .product {
   margin-bottom: 28px;
+  background-color: #FFDBE5; /*временное оформление*/
 }
 
 .product__info {
@@ -69,7 +70,7 @@
 }
 
 @media (min-width: 1150px) {
-  .catalog {
+  .catalog__wrapper {
     display: flex;
     justify-content: space-between;
   }

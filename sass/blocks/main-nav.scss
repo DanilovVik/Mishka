@@ -4,8 +4,7 @@
   margin: 0 auto;
 }
 
-.main-nav__list-promo,
-.main-nav__list-shipping {
+.main-nav__list-promo {
   display: none;
   list-style: none;
   margin: 0;
@@ -40,6 +39,26 @@
   padding-left: 76px;
   padding-right: 0;
   color: #000000;
+}
+
+.main-nav__item a {
+  &:hover {
+    color: #666666;
+  }
+
+  &:active {
+    color: #b2b2b2;
+  }
+}
+
+a.main-nav__item-active {
+  &:hover {
+    color: #000000;
+  }
+
+  &:active {
+    color: #000000;
+  }
 }
 
 @media (min-width: 768px) {
@@ -91,19 +110,6 @@
     font-size: 0;
     width: 82px;
     border-left: 1px solid #ececec;
-  }
-
-  .main-nav__list-shipping {
-    display: block;
-    align-self: flex-end;
-    background-color: #ffe5fe;
-    margin-top: -45px;
-  }
-
-  .main-nav__list-shipping a {
-    font-size: 15px;
-    font-weight: 400;
-    color: #444444;
   }
 }
 

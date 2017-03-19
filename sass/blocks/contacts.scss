@@ -1,8 +1,17 @@
 .contacts {
-  padding-top: 40px;
-  padding-bottom: 39px;
-  box-shadow: 0 0 0 3px red inset; /*временное оформление*/
-  @include container;
+  // padding-top: 40px;
+  // padding-bottom: 39px;
+  // box-shadow: 0 0 0 3px red inset; /*временное оформление*/
+  // @include container;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.contact__wrapper {
+  // padding-top: 40px;
+  // padding-bottom: 39px;
+  padding: 30px;
+  background-color: #F7FFDB; /*временное оформление*/
 }
 
 .contacts__title {
@@ -28,7 +37,32 @@
   margin-bottom: 35px;
 }
 
+.contacts__link-email a {
+  color: #444444;
+  text-decoration: none;
+  border-bottom: 2px solid #62d1ba;
+  &:hover {
+    color: #46c1ae;
+    border-bottom: 2px solid #46c1ae;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: 768px) {
+  .contacts {
+    width: auto;
+    margin: 0 ;
+  }
+
+  .contact__wrapper {
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    @include container;
+  }
+
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
@@ -36,11 +70,11 @@
   }
 
   .contacts__map {
-    margin-left: -50px;
+    margin-left: 0px;
   }
 
   .contacts__map img {
-    width: 768px; /*временное оформление*/
+    width: 668px; /*временное оформление*/
     height: 457px; /*временное оформление*/
   }
 
@@ -70,8 +104,7 @@
 }
 
 @media (min-width: 1150px) {
-  .contacts {
-    // @include clearfix;
+  .contact__wrapper {
     position: relative;
     padding-top: 70px;
     padding-bottom: 100px;
@@ -106,7 +139,7 @@
     margin: 0;
     position: absolute;
     top: 70px;
-    right: 50px;
+    right: 0;
   }
 
   .contacts__map img {

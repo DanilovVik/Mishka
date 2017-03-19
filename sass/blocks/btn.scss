@@ -11,4 +11,13 @@
   text-align: center;
   background: transparent;
   cursor: pointer;
+
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: #7c7c7c;
+  }
 }
