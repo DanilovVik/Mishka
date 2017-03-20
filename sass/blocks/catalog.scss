@@ -1,4 +1,27 @@
 .catalog {
-  padding-top: 30px;
-  box-shadow: 0 0 0 3px green inset; /*временное оформление*/
+  // padding-top: 30px;
+  // box-shadow: 0 0 0 3px green inset; /*временное оформление*/
+  // padding-bottom: 26px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.catalog__wrapper {
+  padding: 30px;
+  background-color: #E3DBFF; /*временное оформление*/
+  // @include container;
+}
+
+@media (min-width: 768px) {
+  .catalog {
+    width: auto;
+    margin: 0;
+  }
+
+  .catalog__wrapper {
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 26px;
+    @include container;
+  }
 }

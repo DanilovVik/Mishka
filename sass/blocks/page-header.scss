@@ -1,6 +1,63 @@
 .page-header {
   width: 320px;
   margin: 0 auto;
-  box-shadow: 0 0 0 3px red inset; /*временное оформление*/
+  // background-color: #f9f9f9;/*временное оформление*/
+}
+
+.page-header__wrapper {
+  position: relative;
+  background-color: #E3DBFF; /*временное оформление*/
+}
+
+.page-header__top-menu {
+  background-color: #aad9ff;/*временное оформление*/
+  min-height: 79px; /*временное оформление*/
   border-bottom: 1px solid #ececec;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-header__logo {
+  padding-top: 20px;
+  width: 86px;
+}
+
+.page-header__shipping {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    width: auto;
+    margin: 0;
+    // @include container;
+  }
+
+  .page-header__wrapper {
+    @include container;
+
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__shipping {
+    display: block;
+    background-color: #ffe5fe;
+    font-size: 15px;
+    font-weight: 400;
+    color: #444444;
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-header__logo {
+    width: 86px;
+    margin: 0 auto;
+  }
 }
