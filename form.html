@@ -15,33 +15,35 @@
             <img src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
           </a>
         </div>
-        <button class="page-header__toggle">Развернуть меню</button>
       </section>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item  main-nav__item--catalog">
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="main-nav__item  main-nav__item--order">
-            <a class="main-nav__item-active">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="main-nav__user-list">
-          <li class="main-nav__item  main-nav__item--search">
-            <a href="#">Поиск по сайту</a>
-          </li>
-          <li class="main-nav__item  main-nav__item--basket">
-            <a href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list-promo">
-          <li class="main-nav__item  main-nav__item--new-product">
-            <a href="#">Новые поступления</a>
-          </li>
-          <li class="main-nav__item  main-nav__item--sale">
-            <a href="#">Распродажа</a>
-          </li>
-        </ul>
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Развернуть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item  main-nav__item--catalog">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--order">
+              <a class="main-nav__item-active">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__user-list">
+            <li class="main-nav__item  main-nav__item--search">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--basket">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list-promo">
+            <li class="main-nav__item  main-nav__item--new-product">
+              <a href="#">Новые поступления</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--sale">
+              <a href="#">Распродажа</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <p class="page-header__shipping">Бесплатная доставка по России</p>
     </div>
@@ -52,12 +54,12 @@
         <h2 class="page-title--content">Вязание на заказ</h2>
       </div>
     </div>
-    <form class="form  container" action="https://echo.htmlacademy.ru/" method="post">
+    <form class="form" action="https://echo.htmlacademy.ru/" method="post">
       <div class="form__wrapper">
         <p class="form__description">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
-        <div class="form__item-wrapper">
+        <div class="form__item-wrapper  form__item-wrapper--type">
           <h3 class="form__title">Тип</h3>
           <ul class="form__list  form__list--type">
             <li class="form__item">
@@ -70,36 +72,38 @@
             </li>
           </ul>
         </div>
-        <div class="form__item-wrapper">
-          <h3 class="form__title">Цвет</h3>
-          <ul class="form__list  form__list--color">
-            <li class="form__item">
-              <input class="form__flag" type="checkbox" id="white" name="white">
-              <label class="form__checkbox" for="white">Белый</label>
-            </li>
-            <li class="form__item">
-              <input class="form__flag" type="checkbox" id="gray" name="gray">
-              <label class="form__checkbox" for="gray">Серый</label>
-            </li>
-            <li class="form__item">
-              <input class="form__flag" type="checkbox" id="tiffany" name="tiffany">
-              <label class="form__checkbox" for="tiffany">«Тиффани»</label>
-            </li>
-            <li class="form__item">
-              <input class="form__flag" type="checkbox" id="black" name="black">
-              <label class="form__checkbox" for="black">Черный</label>
-            </li>
-            <li class="form__item">
-              <input class="form__flag" type="checkbox" id="pink" name="pink">
-              <label class="form__checkbox" for="pink">Розовый</label>
-            </li>
-            <li class="form__item">
-              <input class="form__flag" type="checkbox" id="orange" name="orange">
-              <label class="form__checkbox" for="orange">Оранжевый</label>
-            </li>
-          </ul>
+        <div class="form__item-wrapper  form__item-wrapper--color">
+          <div class="form__item-content-container">
+            <h3 class="form__title">Цвет</h3>
+            <ul class="form__list  form__list--color">
+              <li class="form__item">
+                <input class="form__flag" type="checkbox" id="white" name="white">
+                <label class="form__checkbox" for="white">Белый</label>
+              </li>
+              <li class="form__item">
+                <input class="form__flag" type="checkbox" id="gray" name="gray">
+                <label class="form__checkbox" for="gray">Серый</label>
+              </li>
+              <li class="form__item">
+                <input class="form__flag" type="checkbox" id="tiffany" name="tiffany">
+                <label class="form__checkbox" for="tiffany">«Тиффани»</label>
+              </li>
+              <li class="form__item">
+                <input class="form__flag" type="checkbox" id="black" name="black">
+                <label class="form__checkbox" for="black">Черный</label>
+              </li>
+              <li class="form__item">
+                <input class="form__flag" type="checkbox" id="pink" name="pink">
+                <label class="form__checkbox" for="pink">Розовый</label>
+              </li>
+              <li class="form__item">
+                <input class="form__flag" type="checkbox" id="orange" name="orange">
+                <label class="form__checkbox" for="orange">Оранжевый</label>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="form__item-wrapper">
+        <div class="form__item-wrapper  form__item-wrapper--name">
           <h3 class="form__title">Фио</h3>
           <ul class="form__list  form__list--name">
             <li class="form__item">
@@ -116,25 +120,29 @@
             </li>
           </ul>
         </div>
-        <div class="form__item-wrapper">
-          <h3 class="form__title">Тел</h3>
-          <ul class="form__list">
-            <li class="form__item">
-              <input class="form__field  form__field--tel" type="tel" placeholder="+7 XXX XX XX*" name="tel">
-            </li>
-          </ul>
+        <div class="form__item-wrapper  form__item-wrapper--tel">
+          <div class="form__item-content-container">
+            <h3 class="form__title">Тел</h3>
+            <ul class="form__list  form__list--tel">
+              <li class="form__item">
+                <input class="form__field  form__field--tel" type="tel" placeholder="+7 XXX XX XX*" name="tel">
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="form__item-wrapper">
-          <h3 class="form__title">E-mail</h3>
-          <ul class="form__list">
-            <li class="form__item">
-              <input class="form__field  form__field--email" type="email" placeholder="Ваш Email*" name="email">
-            </li>
-          </ul>
+        <div class="form__item-wrapper  form__item-wrapper--email">
+          <div class="form__item-content-container">
+            <h3 class="form__title">E-mail</h3>
+            <ul class="form__list  form__list--email">
+              <li class="form__item">
+                <input class="form__field  form__field--email" type="email" placeholder="Ваш Email*" name="email">
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="form__item-wrapper">
+        <div class="form__item-wrapper  form__item-wrapper--wishes">
           <h3 class="form__title">Доп</h3>
-          <ul class="form__list">
+          <ul class="form__list  form__list--wishes">
             <li class="form__item">
               <textarea class="form__field  form__field--wishes" name="wishes" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </li>
@@ -164,5 +172,38 @@
       </p>
     </div>
   </footer>
+  <!-- <script src="js/script.js"></script> -->
+  <!-- Временно скрипт в разметке -->
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+    var linkPopup = document.querySelector(".popular-product__btn");
+    var popup = document.querySelector(".modal-content");
+    var overlay = document.querySelector(".modal-content--overlay");
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+
+    linkPopup.addEventListener('click', function(event) {
+      event.preventDefault();
+      popup.classList.add("modal-content--show");
+      overlay.classList.add("modal-content--overlay-show");
+    })
+
+    overlay.addEventListener('click', function(event) {
+      event.preventDefault();
+      popup.classList.remove("modal-content--show");
+      overlay.classList.remove("modal-content--overlay-show");
+    })
+  </script>
 </body>
 </html>

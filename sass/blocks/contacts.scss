@@ -1,49 +1,65 @@
 .contacts {
-  // padding-top: 40px;
-  // padding-bottom: 39px;
-  // box-shadow: 0 0 0 3px red inset; /*временное оформление*/
-  // @include container;
-  width: 320px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.contacts__btn {
+  width: 260px;
   margin: 0 auto;
 }
 
 .contact__wrapper {
-  // padding-top: 40px;
-  // padding-bottom: 39px;
-  padding: 30px;
-  background-color: #F7FFDB; /*временное оформление*/
+  padding-top: 42px;
+  padding-bottom: 40px;
+  // background-color: #F7FFDB; /*временное оформление*/
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts__title {
   font-size: 18px;
   line-height: 30px;
-  margin: 0;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 25px;
 }
 
 .contacts__address {
   font-size: 15px;
   line-height: 30px;
   color: #444444;
-  margin-bottom: 35px;
+  border-collapse: collapse;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 37px;
 }
 
 .contacts__name-address {
   width: 75px;
   vertical-align: top;
+  padding-bottom: 29px;
 }
 
 .contacts__map {
-  margin-left: -30px;
-  margin-bottom: 35px;
+  margin-bottom: 39px;
+}
+
+.contacts__place {
+  padding-right: 20px;
+}
+
+.contacts__link-email {
+  padding-bottom: 29px;
 }
 
 .contacts__link-email a {
   color: #444444;
+  padding-bottom: 4px;
   text-decoration: none;
-  border-bottom: 2px solid #62d1ba;
+  border-bottom: 1px solid #62d1ba;
   &:hover {
     color: #46c1ae;
-    border-bottom: 2px solid #46c1ae;
+    border-bottom: 1px solid #46c1ae;
   }
   &:active {
     opacity: 0.3;
@@ -58,28 +74,30 @@
 
   .contact__wrapper {
     padding: 0;
-    padding-top: 40px;
-    padding-bottom: 30px;
-    @include container;
+    padding-top: 68px;
+    padding-bottom: 58px;
+    margin-left: -6px;
   }
 
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 60px;
+
+    width: 668px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+  }
+
+  .contacts__address {
+    margin-bottom: 55px;
   }
 
   .contacts__map {
-    margin-left: 0px;
-  }
-
-  .contacts__map img {
-    width: 668px; /*временное оформление*/
-    height: 457px; /*временное оформление*/
+    margin-bottom: 55px;
   }
 
   .contacts__btn {
-    width: 260px;
+    width: 228px;
     margin: 0 auto;
   }
 
@@ -90,7 +108,8 @@
 
   .contacts__address tr {
     display: block;
-    width: 283px;
+    width: 298px;
+
   }
 
   .contacts__email {
@@ -106,19 +125,23 @@
 @media (min-width: 1150px) {
   .contact__wrapper {
     position: relative;
-    padding-top: 70px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 106px;
+    @include container;
   }
 
   .contacts__title {
     font-size: 53px;
     line-height: 145px;
-    margin-left: 175px;
+    margin-left: 171px;
+    padding-top: 25px;
+    margin-bottom: 5px;
   }
 
   .contacts__address {
     width: 298px;
     margin-left: 175px;
+    margin-bottom: 79px;
   }
 
   .contacts__address tr {
@@ -138,17 +161,13 @@
   .contacts__map {
     margin: 0;
     position: absolute;
-    top: 70px;
+    top: 96px;
     right: 0;
-  }
-
-  .contacts__map img {
-    width: 525px; /*временное оформление*/
-    height: 457px; /*временное оформление*/
+    width: 525px;
+    height: 457px;
   }
 
   .contacts__btn {
-    width: 260px;
     margin: 0;
     margin-left: 175px;
   }

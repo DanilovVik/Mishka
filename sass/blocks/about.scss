@@ -1,14 +1,12 @@
 .about {
-  // padding-top: 30px;
-  // padding-bottom: 20px;
-  // box-shadow: 0 0 0 3px red inset; /*временное оформление*/
   width: 320px;
   margin: 0 auto;
 }
 
 .about__wrapper {
   padding: 30px;
-  background-color: #E3DBFF; /*временное оформление*/
+  padding-top: 38px;
+  // background-color: #E3DBFF; /*временное оформление*/
 }
 
 .about__title {
@@ -26,8 +24,12 @@
 .about__item {
   font-size: 17px;
   line-height: 20px;
-  font-weight: 800;
-  padding-top: 85px;
+  font-weight: 700;
+  padding-top: 84px;
+}
+
+.about__list--column-2 {
+  margin-top: -3px;
 }
 
 @media (min-width: 768px) {
@@ -38,31 +40,41 @@
 
   .about__wrapper {
     padding: 0;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    padding-bottom: 75px;
+    padding-top: 68px;
+    padding-bottom: 140px;
     @include container;
   }
 
   .about__title {
     font-size: 43px;
     line-height: 50px;
+    margin-left: -4px;
+    margin-bottom: -10px;
   }
 
   .about__item {
     font-size: 20px;
     line-height: 22px;
-    padding-top: 100px;
+    padding-top: 111px;
     width: 300px;
   }
 
   .about__list {
-    width: 331px;
+    width: 330px;
     display: inline-block;
+    vertical-align: top;
+  }
+
+  .about__list--column-2 {
+    margin-top: 2px;
   }
 }
 
 @media (min-width: 1150px) {
+  .about__wrapper {
+    padding-top: 56px;
+  }
+
   .about__title {
     font-size: 53px;
     line-height: 57px;
@@ -71,5 +83,7 @@
 
   .about__list--column-1 {
     padding-left: 175px;
+    margin-right: 15px;
+    margin-top: 2px;
   }
 }

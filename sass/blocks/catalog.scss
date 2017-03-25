@@ -1,15 +1,12 @@
 .catalog {
-  // padding-top: 30px;
-  // box-shadow: 0 0 0 3px green inset; /*временное оформление*/
-  // padding-bottom: 26px;
   width: 320px;
   margin: 0 auto;
 }
 
 .catalog__wrapper {
   padding: 30px;
-  background-color: #E3DBFF; /*временное оформление*/
-  // @include container;
+  padding-bottom: 15px;
+  // background-color: #E3DBFF; /*временное оформление*/
 }
 
 @media (min-width: 768px) {
@@ -20,8 +17,14 @@
 
   .catalog__wrapper {
     padding: 0;
-    padding-top: 30px;
-    padding-bottom: 26px;
+    padding-top: 84px;
     @include container;
+  }
+}
+
+@media (min-width: 1150px) {
+  .catalog__wrapper {
+    padding-top: 130px;
+    padding-bottom: 0;
   }
 }
