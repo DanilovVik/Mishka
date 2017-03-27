@@ -70,7 +70,7 @@
               Рост 30 см, вес 200 г
             </p>
             <div class="product__price">
-              1 200 руб. <a class="product__buy" href="#">basket</a>
+              1 200 руб. <a class="product__buy  js-popup-open" href="#">basket</a>
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@
               Диаметр 15 см, высота 10 см
             </p>
             <div class="product__price">
-              690 руб. <a class="product__buy" href="#">basket</a>
+              690 руб. <a class="product__buy  js-popup-open" href="#">basket</a>
             </div>
           </div>
         </div>
@@ -106,7 +106,7 @@
               Диаметр 30 см, высота 30 см
             </p>
             <div class="product__price">
-              1 500 руб. <a class="product__buy" href="#">basket</a>
+              1 500 руб. <a class="product__buy  js-popup-open" href="#">basket</a>
             </div>
           </div>
         </div>
@@ -180,38 +180,6 @@
       <button class="btn btn--modal">Добавить</button>
     </form>
   </div>
-  <!-- <script src="js/script.js"></script> -->
-  <!-- Временно скрипт в разметке -->
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-    var linkPopup = document.querySelector(".popular-product__btn");
-    var popup = document.querySelector(".modal-content");
-    var overlay = document.querySelector(".modal-content--overlay");
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-
-    linkPopup.addEventListener('click', function(event) {
-      event.preventDefault();
-      popup.classList.add("modal-content--show");
-      overlay.classList.add("modal-content--overlay-show");
-    })
-
-    overlay.addEventListener('click', function(event) {
-      event.preventDefault();
-      popup.classList.remove("modal-content--show");
-      overlay.classList.remove("modal-content--overlay-show");
-    })
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>

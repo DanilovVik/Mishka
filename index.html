@@ -100,7 +100,7 @@
           <p class="popular-product__price">
             Цена: 990 руб.
           </p>
-          <a class="popular-product__btn  btn" href="#">Заказать</a>
+          <a class="popular-product__btn  btn  js-popup-open" href="#">Заказать</a>
         </div>
       </div>
     </section>
@@ -220,38 +220,6 @@
       <button class="btn btn--modal">Добавить</button>
     </form>
   </div>
-  <!-- <script src="js/script.js"></script> -->
-  <!-- Временно скрипт в разметке -->
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-    var linkPopup = document.querySelector(".popular-product__btn");
-    var popup = document.querySelector(".modal-content");
-    var overlay = document.querySelector(".modal-content--overlay");
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-
-    linkPopup.addEventListener('click', function(event) {
-      event.preventDefault();
-      popup.classList.add("modal-content--show");
-      overlay.classList.add("modal-content--overlay-show");
-    })
-
-    overlay.addEventListener('click', function(event) {
-      event.preventDefault();
-      popup.classList.remove("modal-content--show");
-      overlay.classList.remove("modal-content--overlay-show");
-    })
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>

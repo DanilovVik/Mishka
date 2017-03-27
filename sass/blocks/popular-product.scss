@@ -5,7 +5,7 @@
 
 .popular-product__wrapper {
   padding: 30px;
-  padding-top: 29px;
+  padding-top: 26px;
   // background-color: #DBFFF5; /*временное оформление*/
 }
 
@@ -15,6 +15,7 @@
     line-height: 30px;
     font-weight: 700;
     margin: 0;
+    margin-bottom: 4px;
   }
 
   &--color {
@@ -26,20 +27,20 @@
 }
 
 .popular-product__title-wrapper {
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 .popular-product__description {
   font-size: 15px;
   color: #444444;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .popular-product__settings {
   font-size: 15px;
   color: #444444;
   border-collapse: collapse;
-  margin-bottom: 29px;
+  margin-bottom: 26px;
 }
 
 .popular-product__item,
@@ -58,7 +59,7 @@
   color: #444444;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 
 @media (min-width: 768px) {
@@ -72,13 +73,14 @@
     padding-right: 0;
     position: relative;
     padding-bottom: 50px;
+    padding-top: 26px;
     @include container;
   }
 
   .popular-product__title-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
   }
 
   .popular-product__title {
@@ -107,13 +109,13 @@
   }
 
   .popular-product__description {
-    margin-bottom: 39px;
+    margin-bottom: 36px;
     font-size: 17px;
     line-height: 30px;
   }
 
   .popular-product__settings {
-    margin-bottom: 37px;
+    margin-bottom: 36px;
     width: 290px;
   }
 
@@ -141,7 +143,7 @@
   }
 
   .popular-product__price {
-    margin-bottom: 36px;
+    margin-bottom: 34px;
     margin-left: 5px;
     font-size: 20px;
   }
@@ -149,13 +151,13 @@
 
 @media (min-width: 1150px) {
   .popular-product__wrapper {
-    padding-bottom: 100px;
+    padding-bottom: 93px;
   }
 
   .popular-product__picture {
     width: 525px;/*временное оформление*/
     height: 636px;/*временное оформление*/
-    top: 50px;
+    top: 47px;
   }
 
   .popular-product__description-wrapper {
@@ -168,7 +170,7 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: row-reverse;
-    margin-top: 77px;
+    margin-top: 78px;
   }
 
   .popular-product__title {
@@ -186,11 +188,11 @@
   }
 
   .popular-product__description {
-    margin-bottom: 52px;
+    margin-bottom: 48px;
   }
 
   .popular-product__settings {
     width: 292px;
-    margin-bottom: 92px;
+    margin-bottom: 90px;
   }
 }

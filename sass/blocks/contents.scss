@@ -21,7 +21,7 @@
   text-align: center;
   margin: 0 auto;
   width: 250px;
-  margin-top: 70px;
+  margin-top: 69px;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -41,7 +41,7 @@
   display: block;
   width: 170px;
   margin: 0 auto;
-  padding-top: 26px;
+  padding-top: 25px;
   padding-bottom: 30px;
   padding-right: 120px;
   padding-left: 30px;
@@ -53,22 +53,15 @@
 
 .contents__link--toys {
   background-color: #56c3b2;
-  &:hover {
-    background-color: #46c1ae;
-  }
 }
 
 .contents__link--interior {
   background-color: #63d1bb;
-
-  &:hover {
-    background-color: #59d5bc;
-  }
 }
 
 @media (min-width: 768px) {
   .contents {
-    padding-top: 50px;
+    padding-top: 55px;
     width: auto;
   }
 
@@ -94,26 +87,43 @@
   .contents__link a {
     // display: block;
     width: 170px;
-    padding-right: 134px;
+    padding-right: 130px;
     font-size: 20px;
     line-height: 30px;
+    padding-left: 34px;
     // padding-left: 30px;
-    // padding-top: 27px;
+    padding-top: 28px;
     // padding-bottom: 28px;
   }
 
+  // .contents__link--toys {
+  //   float: right;
+  // }
+
+  // .contents__link--interior {
+  //   float: left;
+  // }
+
   .contents__link--toys {
-    float: right;
+    &:hover {
+      background-color: #46c1ae;
+      margin-top: -5px;
+      padding-bottom: 5px;
+    }
   }
 
   .contents__link--interior {
-    float: left;
+    &:hover {
+      background-color: #59d5bc;
+      margin-top: -5px;
+      padding-bottom: 5px;
+    }
   }
 }
 
 @media (min-width: 1150px) {
   .contents__wrapper {
-    height: 691px;
+    height: 689px;
     @include container;
   }
 
@@ -121,12 +131,14 @@
     font-size: 53px;
     line-height: 57px;
     min-width: 700px;
-    margin-top: 103px;
+    margin-top: 99px;
   }
 
   .contents__link a {
-    padding-right: 350px;
-    padding-left: 39px;
+    padding-right: 351px;
+    padding-left: 38px;
+    padding-top: 28px;
+    padding-bottom: 30px;
     width: 136px;
   }
 }
