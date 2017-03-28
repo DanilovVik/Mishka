@@ -1,33 +1,33 @@
 .page-footer {
-  // background-color: #f1f1f1;
-  // box-shadow: 0 0 0 3px green inset; /*временное оформление*/
-  // padding-top: 30px;
-  // padding-bottom: 30px;
-  // @include container;
-  width: 320px;
-  margin: 0 auto;
+  width: auto;
+  background-color: #f1f1f1;
 }
 
 .page-footer__wrapper {
+  text-align: center;
   padding: 30px;
-  background-color: #FFDBE5; /*временное оформление*/
+  padding-bottom: 13px;
+  width: 260px;
+  margin: 0 auto
+  // background-color: #FFDBE5; /*временное оформление*/
 }
 
 .page-footer__footer-logo {
   display: none;
 }
 
+.page-footer__copyright {
+  padding-top: 25px;
+  border-top: 1px solid #e5e5e5;
+}
+
 .page-footer__copyright--link {
   text-decoration: none;
   font-size: 19px;
   line-height: 18px;
-  font-weight: 800;
+  font-weight: 700;
   color: #000000;
   padding-right: 57px;
-}
-
-.page-footer__container {
-  padding: 0 30px;
 }
 
 @media (min-width: 768px) {
@@ -38,9 +38,8 @@
 
   .page-footer__wrapper {
     padding: 0;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    min-height: 143px;
+    padding-top: 48px;
+    padding-bottom: 42px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,7 +50,9 @@
     display: block;
   }
 
-  .page-footer__container {
-    padding: 0 50px;
+  .page-footer__copyright {
+    padding-top: 0;
+    margin-top: 12px;
+    border-top: none;
   }
 }

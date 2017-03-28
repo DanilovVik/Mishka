@@ -15,33 +15,35 @@
             <img src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
           </a>
         </div>
-        <button class="page-header__toggle">Развернуть меню</button>
       </section>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item  main-nav__item--catalog">
-            <a class="main-nav__item-active">Каталог товаров</a>
-          </li>
-          <li class="main-nav__item  main-nav__item--order">
-            <a href="form.html">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="main-nav__user-list">
-          <li class="main-nav__item  main-nav__item--search">
-            <a href="#">Поиск по сайту</a>
-          </li>
-          <li class="main-nav__item  main-nav__item--basket">
-            <a href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list-promo">
-          <li class="main-nav__item  main-nav__item--new-product">
-            <a href="#">Новые поступления</a>
-          </li>
-          <li class="main-nav__item  main-nav__item--sale">
-            <a href="#">Распродажа</a>
-          </li>
-        </ul>
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Развернуть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item  main-nav__item--catalog">
+              <a class="main-nav__item-active">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--order">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__user-list">
+            <li class="main-nav__item  main-nav__item--search">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--basket">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list-promo">
+            <li class="main-nav__item  main-nav__item--new-product">
+              <a href="#">Новые поступления</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--sale">
+              <a href="#">Распродажа</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <p class="page-header__shipping">Бесплатная доставка по России</p>
     </div>
@@ -68,7 +70,7 @@
               Рост 30 см, вес 200 г
             </p>
             <div class="product__price">
-              1 200 руб. <a class="product__buy" href="#">basket</a>
+              1 200 руб. <a class="product__buy  js-popup-open" href="#">basket</a>
             </div>
           </div>
         </div>
@@ -86,7 +88,7 @@
               Диаметр 15 см, высота 10 см
             </p>
             <div class="product__price">
-              690 руб. <a class="product__buy" href="#">basket</a>
+              690 руб. <a class="product__buy  js-popup-open" href="#">basket</a>
             </div>
           </div>
         </div>
@@ -104,7 +106,7 @@
               Диаметр 30 см, высота 30 см
             </p>
             <div class="product__price">
-              1 500 руб. <a class="product__buy" href="#">basket</a>
+              1 500 руб. <a class="product__buy  js-popup-open" href="#">basket</a>
             </div>
           </div>
         </div>
@@ -145,28 +147,39 @@
       </p>
     </div>
   </footer>
+  <div class="modal-content--overlay"></div>
+  <!-- Псевдоэлементом, нормально работающий overlay, не получилось сделать. -->
   <div class="modal-content">
-    <form class="modal-content__form  container" action="https://echo.htmlacademy.ru/" method="post">
+    <form class="modal-content__form" action="https://echo.htmlacademy.ru/" method="post">
       <h2 class="modal-content__title">
         Добавить в корзину
       </h2>
       <p class="modal-content__description">
         Выберите размер:
       </p>
-      <input class="modal-content__toggle" type="radio" name="size" value="S" id="S" checked>
-      <label class="modal-content__size" for="S">
-        S
-      </label>
-      <input class="modal-content__toggle" type="radio" name="size" value="M" id="M">
-      <label class="modal-content__size" for="M">
-        M
-      </label>
-      <input class="modal-content__toggle" type="radio" name="size" value="L" id="L">
-      <label class="modal-content__size" for="L">
-        L
-      </label>
+      <div class="modal-content__sizes">
+        <div class="modal-content__item-size">
+          <input class="modal-content__toggle" type="radio" name="size" value="S" id="S" checked>
+          <label class="modal-content__size" for="S">
+            S
+          </label>
+        </div>
+        <div class="modal-content__item-size">
+          <input class="modal-content__toggle" type="radio" name="size" value="M" id="M">
+          <label class="modal-content__size" for="M">
+            M
+          </label>
+        </div>
+        <div class="modal-content__item-size">
+          <input class="modal-content__toggle" type="radio" name="size" value="L" id="L" checked>
+          <label class="modal-content__size" for="L">
+            L
+          </label>
+        </div>
+      </div>
       <button class="btn btn--modal">Добавить</button>
     </form>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

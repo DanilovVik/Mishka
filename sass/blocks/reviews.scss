@@ -1,32 +1,33 @@
 .reviews {
-  // box-shadow: 0 0 0 3px green inset; /*временное оформление*/
-  // padding-top: 60px;
-  // padding-bottom: 40px;
-  // @include container;
   width: 320px;
   margin: 0 auto;
 }
 
 .reviews__wrapper {
   padding: 30px;
-  background-color: #DBFFF5; /*временное оформление*/
+  padding-top: 25px;
+  padding-bottom: 45px;
+  // background-color: #DBFFF5; /*временное оформление*/
 }
 
 .reviews__title {
   font-size: 25px;
   line-height: 30px;
   margin: 0;
+  margin-bottom: 22px;
 }
 
 .reviews__comment {
   font-size: 15px;
   line-height: 30px;
   color: #444444;
+  margin-bottom: 29px;
 }
 
 .reviews__author-name {
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 700;
+  margin-bottom: 32px;
 }
 
 .reviews__author-account {
@@ -37,23 +38,20 @@
 
 .reviews__slider {
   width: 260px; /*временное оформление*/
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   border: 1px solid #ececec;
 }
 
 @media (min-width: 768px) {
   .reviews {
-    // padding-top: 80px;
-    // display: flex;
-    // flex-direction: column;
-    // position: relative;
     width: auto;
     margin: 0;
+    padding-bottom: 96px;
   }
 
   .reviews__wrapper {
     padding: 0;
-    padding-top: 30px;
+    padding-top: 21px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -63,11 +61,14 @@
   .reviews__title {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 32px;
+    margin-left: -4px;
   }
 
   .reviews__comment {
     font-size: 17px;
     line-height: 30px;
+    margin-bottom: 58px;
   }
 
   .reviews__author-name {
@@ -76,22 +77,47 @@
   }
 
   .btn-reviews {
-    width: 174px;
+    width: 171px;
     position: absolute;
     right: 0;
-    // margin-right: 50px;
+    margin-top: 2px;
   }
 
   .reviews__slider  {
     position: absolute;
     right: 0;
-    bottom: -20px;
-    // margin-right: 50px;
+    bottom: 0px;
   }
 }
 
 @media (min-width: 1150px) {
+  .reviews {
+    padding-bottom: 130px;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: 171px;
+    margin-top: 3px;
+  }
+
   .reviews__comment {
+    margin-left: 175px;
     padding-right: 100px;
+    margin-bottom: 39px;
+  }
+
+  .reviews__author-name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 175px;
+  }
+
+  .btn-reviews {
+    width: 171px;
+    position: absolute;
+    right: 0;
+    margin-top: 11px;
   }
 }

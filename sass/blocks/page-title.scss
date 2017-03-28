@@ -1,12 +1,7 @@
 .page-title {
-  // background-color: #f1f1f1;
+  background-color: #f1f1f1;
   text-align: center;
-  // padding-top: 75px;
-  // padding-bottom: 75px;
-  // box-shadow: 0 0 0 3px red inset; /*временное оформление*/
-  // @include container;
-  width: 320px;
-  margin: 0 auto;
+  width: auto;
 
   &--content {
     font-size: 27px;
@@ -16,10 +11,9 @@
 }
 
 .page-title__wrapper {
-  // padding: 30px;
-  padding-top: 75px;
+  padding-top: 70px;
   padding-bottom: 75px;
-  background-color: #DBFFF5; /*временное оформление*/
+  // background-color: #DBFFF5; /*временное оформление*/
   @include container;
 }
 
@@ -31,8 +25,9 @@
 
   .page-title__wrapper {
     padding: 0;
-    padding-top: 75px;
+    padding-top: 94px;
     padding-bottom: 75px;
+    padding-left: 10px;
   }
 
 
@@ -46,11 +41,16 @@
 }
 
 @media (min-width: 1150px) {
+  .page-title__wrapper {
+    padding-top: 94px;
+    padding-bottom: 101px;
+    padding-left: 5px;
+  }
+
   .page-title {
     &--content {
       font-size: 53px;
       line-height: 57px;
-      margin: 0;
     }
   }
 }
