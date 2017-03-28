@@ -4,7 +4,6 @@
 }
 
 .video__wrapper {
-  // background-color: #F7FFDB; /*временное оформление*/
   position: relative;
   padding: 30px;
   padding-top: 14px;
@@ -43,8 +42,39 @@
 
 .play-btn {
   position: absolute;
-  top: 40%;/*временное оформление*/
-  left: 40%;/*временное оформление*/
+  top: 40px;
+  left: 80px;
+  font-size: 0;
+  width: 102px;
+  height: 78px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  background-image: url(../img/icon-play.svg);
+
+  &:hover {
+    width: 121px;
+    height: 92px;
+    top: 31px;
+    left: 74px;
+    background-size: 121px 92px;
+  }
+
+  &:active {
+    width: 81px;
+    height: 86px;
+    opacity: 0.9;
+    top: 35px;
+    left: 90px;
+    background-size: 81px 86px;
+  }
+}
+
+.video__title-icon {
+  position: absolute;
+  left: 34px;
+  top: 6px;
+  fill: #63d1bb;
 }
 
 @media (min-width: 768px) {
@@ -94,6 +124,33 @@
     width: 668px;/*временное оформление*/
     height: 455px;/*временное оформление*/
   }
+
+  .video__title-icon {
+    left: 0px;
+    top: -5px;
+  }
+
+  .play-btn {
+    top: 195px;
+    left: 284px;
+
+    &:hover {
+      width: 121px;
+      height: 92px;
+      top: 185px;
+      left: 276px;
+      background-size: 121px 92px;
+    }
+
+    &:active {
+      width: 81px;
+      height: 86px;
+      opacity: 0.9;
+      top: 195px;
+      left: 294px;
+      background-size: 81px 86px;
+    }
+  }
 }
 
 @media (min-width: 1150px) {
@@ -139,5 +196,32 @@
 
   .video__player {
     height: 454px;
+  }
+
+  .video__title-icon {
+    left: 2px;
+    top: -55px;
+  }
+
+  .play-btn {
+    top: 190px;
+    left: 299px;
+
+    &:hover {
+      width: 121px;
+      height: 92px;
+      top: 180px;
+      left: 292px;
+      background-size: 121px 92px;
+    }
+
+    &:active {
+      width: 81px;
+      height: 86px;
+      opacity: 0.9;
+      top: 189px;
+      left: 305px;
+      background-size: 81px 86px;
+    }
   }
 }

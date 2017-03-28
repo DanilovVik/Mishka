@@ -5,11 +5,10 @@
 
 .page-footer__wrapper {
   text-align: center;
-  padding: 30px;
-  padding-bottom: 13px;
+  padding-bottom: 9px;
   width: 260px;
-  margin: 0 auto
-  // background-color: #FFDBE5; /*временное оформление*/
+  margin: 0 auto;
+  padding-top: 25px;
 }
 
 .page-footer__footer-logo {
@@ -17,7 +16,7 @@
 }
 
 .page-footer__copyright {
-  padding-top: 25px;
+  padding-top: 23px;
   border-top: 1px solid #e5e5e5;
 }
 
@@ -28,6 +27,26 @@
   font-weight: 700;
   color: #000000;
   padding-right: 57px;
+  position: relative;
+
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    color: #a8a8a8;
+  }
+
+  &:active svg {
+    fill: #bde3dd;
+  }
+}
+
+.page-footer__copyright--link svg {
+  position: absolute;
+  right: 1px;
+  top: -1px;
+  fill: #63d1bb;
 }
 
 @media (min-width: 768px) {
@@ -48,11 +67,20 @@
 
   .page-footer__footer-logo {
     display: block;
+    margin-top: -10px;
   }
 
   .page-footer__copyright {
     padding-top: 0;
     margin-top: 12px;
     border-top: none;
+  }
+
+  .page-footer__copyright--link {
+    padding-right: 110px;
+  }
+
+  .page-footer__copyright--link svg {
+    right: -56px;
   }
 }

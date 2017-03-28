@@ -7,7 +7,6 @@
   padding: 30px;
   padding-bottom: 55px;
   padding-top: 23px;
-  // background-color: #F7FFDB; /*временное оформление*/
 }
 
 .form__description {
@@ -91,7 +90,7 @@
 }
 
 .form__list--type .form__item {
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 }
 
 .form__list--type {
@@ -221,12 +220,7 @@
   resize: none;
   border: 2px solid #444444;
   padding: 15px;
-  &:hover {
-    border: 2px solid #62d1ba;
-  }
-  &:focus {
-    border: 2px solid #62d1ba;
-  }
+
 }
 
 .form__note {
@@ -241,6 +235,40 @@
   margin: 0 auto;
   padding-left: 45px;
   padding-right: 45px;
+}
+
+.form__item {
+  position: relative;
+}
+
+.form__tel-icon {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  fill: #c1c1c1;
+}
+
+.form__email-icon {
+  position: absolute;
+  top: 0;
+  right: 4px;
+  fill: #c1c1c1;
+}
+
+.form__field--tel:hover+.form__tel-icon {
+  fill: #62d1ba;
+}
+
+.form__field--tel:focus+.form__tel-icon {
+  fill: #62d1ba;
+}
+
+.form__field--email:hover+.form__email-icon {
+  fill: #62d1ba;
+}
+
+.form__field--email:focus+.form__email-icon {
+  fill: #62d1ba;
 }
 
 @media (min-width: 768px)  {
@@ -278,7 +306,7 @@
   .form__wrapper {
     padding: 0px;
     padding-bottom: 55px;
-    padding-top: 27px;
+    padding-top: 22px;
   }
 
   .form__item-wrapper,
@@ -456,6 +484,14 @@
   .form__wrapper {
     padding-bottom: 32px;
   }
+
+  .form__tel-icon {
+    right: 25px;
+  }
+
+  .form__email-icon {
+    right: 22px;
+  }
 }
 
 @media (min-width: 1150px) {
@@ -517,5 +553,13 @@
   .form__footer {
     width: 700px;
     padding-top: 39px;
+  }
+
+  .form__tel-icon {
+    right: 183px;
+  }
+
+  .form__email-icon {
+    right: 179px;
   }
 }

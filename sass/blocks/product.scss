@@ -1,6 +1,5 @@
 .product {
-  margin-bottom: 28px;
-  // background-color: #FFDBE5; /*временное оформление*/
+  margin-bottom: 30px;
 }
 
 .product:last-child {
@@ -9,6 +8,7 @@
 
 .product__info {
   padding: 27px;
+  padding-bottom: 18px;
   border: 1px solid #ededed;
 }
 
@@ -29,6 +29,8 @@
   font-size: 15px;
   font-weight: 800;
   border-top: 1px solid #ececec;
+  display: flex;
+  justify-content: space-between;
 }
 
 .product__title--link {
@@ -38,6 +40,23 @@
 }
 
 .product__picture {
+  margin-bottom: -6px;
+}
+
+.product__buy {
+  font-size: 0;
+  right: 0;
+
+  &:hover svg {
+    fill: #63d1bb;
+  }
+
+  &:active svg {
+    fill: #d0f1ea;
+  }
+}
+
+.product img {
   margin-bottom: -6px;
 }
 
@@ -85,6 +104,10 @@
 
   .product:last-child {
     margin-bottom: 54px;
+  }
+
+  .product__buy {
+    margin-right: 5px;
   }
 }
 

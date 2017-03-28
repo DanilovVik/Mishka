@@ -1,12 +1,25 @@
 .popular-product {
-  width: 320px;
-  margin: 0 auto;
+  width: auto;
+  position: relative;
+
+  &::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 8px;
+    background: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
 }
 
 .popular-product__wrapper {
+  width: 260px;
+  margin: 0 auto;
   padding: 30px;
-  padding-top: 26px;
-  // background-color: #DBFFF5; /*временное оформление*/
+  padding-top: 27px;
+  padding-bottom: 42px;
 }
 
 .popular-product__title {
@@ -59,13 +72,30 @@
   color: #444444;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 @media (min-width: 768px) {
   .popular-product {
     width: auto;
     margin: 0;
+
+    &::before{
+      height: 17px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 23px;
+      z-index: 1;
+      background-image: url(../img/bg-zigzag-fill.svg);
+      background-repeat: repeat-x;
+      background-position: -15px 0;
+      background-size: auto 23px;
+      top: -10px;
+    }
   }
 
   .popular-product__wrapper {
@@ -150,6 +180,20 @@
 }
 
 @media (min-width: 1150px) {
+  .popular-product {
+    width: auto;
+    margin: 0;
+
+    &::before{
+      height: 23px;
+    }
+
+    &::after {
+      background-size: auto 34px;
+      top: -17px;
+    }
+  }
+
   .popular-product__wrapper {
     padding-bottom: 93px;
   }

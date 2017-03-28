@@ -1,5 +1,4 @@
 .contents {
-  // background-image: url(../img/hero-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: 50% -16%;
   width: auto;
@@ -12,7 +11,14 @@
   flex-direction: column;
   justify-content: space-between;
   height: 488px;
-  // background-color: #FFDBE5; /*временное оформление*/
+  background-image: url(../img/hero-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center -9px;
+  background-size: 575px auto;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  background-image: url(../img/hero-mobile@2x.jpg);
 }
 
 .contents__title {
@@ -45,6 +51,7 @@
   padding-bottom: 30px;
   padding-right: 120px;
   padding-left: 30px;
+  position: relative;
 
   &:active {
     opacity: 0.3;
@@ -59,6 +66,20 @@
   background-color: #63d1bb;
 }
 
+.contents__icon-interior {
+  position: absolute;
+  right: 36px;
+  top: 23px;
+  fill: #3bb09d;
+}
+
+.contents__icon-toys {
+  position: absolute;
+  right: 27px;
+  top: 20px;
+  fill: #3bb09d;
+}
+
 @media (min-width: 768px) {
   .contents {
     padding-top: 55px;
@@ -68,6 +89,14 @@
   .contents__wrapper {
     height: 689px;
     @include container;
+    background-image: url(../img/hero-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center -56px;
+    background-size: 1150px auto;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/hero-desktop@2x.jpg);
   }
 
   .contents__title {
@@ -79,45 +108,49 @@
 
   .contents__links {
     flex-direction: row;
-    // display: block;
     display: flex;
-
   }
 
   .contents__link a {
-    // display: block;
     width: 170px;
     padding-right: 130px;
     font-size: 20px;
     line-height: 30px;
     padding-left: 34px;
-    // padding-left: 30px;
     padding-top: 28px;
-    // padding-bottom: 28px;
   }
 
-  // .contents__link--toys {
-  //   float: right;
-  // }
+  .contents__link {
+    &:hover {
+      margin-top: -5px;
+      padding-bottom: 5px;
+    }
 
-  // .contents__link--interior {
-  //   float: left;
-  // }
+    &:hover svg {
+      fill: #29a592;
+    }
+  }
 
   .contents__link--toys {
     &:hover {
       background-color: #46c1ae;
-      margin-top: -5px;
-      padding-bottom: 5px;
+
     }
   }
 
   .contents__link--interior {
     &:hover {
       background-color: #59d5bc;
-      margin-top: -5px;
-      padding-bottom: 5px;
     }
+  }
+
+  .contents__icon-interior {
+    top: 30px;
+  }
+
+  .contents__icon-toys {
+    right: 34px;
+    top: 32px;
   }
 }
 
