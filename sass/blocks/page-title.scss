@@ -13,30 +13,40 @@
 .page-title__wrapper {
   padding-top: 70px;
   padding-bottom: 75px;
-  // background-color: #DBFFF5; /*временное оформление*/
   @include container;
 }
 
 @media (min-width: 768px) {
   .page-title {
-    width: auto;
-    margin: 0;
-  }
+    position: relative;
 
-  .page-title__wrapper {
-    padding: 0;
-    padding-top: 94px;
-    padding-bottom: 75px;
-    padding-left: 10px;
-  }
-
-
-  .page-title {
     &--content {
       font-size: 43px;
       line-height: 50px;
       margin: 0;
     }
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      bottom: -17px;
+      left: 0;
+      width: 100%;
+      height: 27px;
+      z-index: 10;
+      background-image: url(../img/bg-zigzag-fill.svg);
+      background-size: auto 23px;
+      background-repeat: repeat-x;
+      background-position: -15px 0;
+    }
+  }
+
+  .page-title__wrapper {
+    padding: 0;
+    padding-top: 94px;
+    padding-bottom: 80px;
+    padding-left: 10px;
   }
 }
 
@@ -51,6 +61,11 @@
     &--content {
       font-size: 53px;
       line-height: 57px;
+    }
+
+    &::before {
+      background-size: auto 34px;
+      bottom: -12px;
     }
   }
 }

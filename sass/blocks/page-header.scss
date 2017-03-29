@@ -1,15 +1,8 @@
-.page-header {
-  border-bottom: 1px solid #ececec;
-  // background-color: yellow;/*временное оформление*/
-}
-
 .page-header__wrapper {
   position: relative;
-  // background-color: #E3DBFF; /*временное оформление*/
 }
 
 .page-header__top-menu {
-  // background-color: #aad9ff;/*временное оформление*/
   min-height: 79px; /*временное оформление*/
   display: flex;
   flex-direction: row;
@@ -19,8 +12,21 @@
 }
 
 .page-header__logo {
-  padding-top: 20px;
+  padding-top: 22px;
+  margin-left: 116px;
   width: 86px;
+  height: 35px;
+}
+
+.page-header__logo-link {
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__shipping {
@@ -31,6 +37,14 @@
   .page-header {
     width: auto;
     margin: 0;
+    border-bottom: 1px solid #ececec;
+  }
+
+  .page-header__logo {
+    padding-top: 22px;
+    margin-left: 0px;
+    width: 113px;
+    height: 46px;
   }
 
   .page-header__top-menu {
@@ -49,18 +63,20 @@
 
   .page-header__shipping {
     display: block;
-    // background-color: #ffe5fe;
     font-size: 15px;
     font-weight: 400;
     color: #444444;
     position: absolute;
     right: 0;
   }
-}
 
-@media (min-width: 1150px) {
-  .page-header__logo {
-    width: 86px;
-    margin: 0 auto;
+  @media (min-width: 1150px) {
+    .page-header__logo {
+      padding-top: 8px;
+      margin-left: 116px;
+      width: 149px;
+      height: 72px;
+      margin: 0 auto;
+    }
   }
 }

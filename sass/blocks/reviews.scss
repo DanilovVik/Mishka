@@ -1,13 +1,26 @@
 .reviews {
-  width: 320px;
-  margin: 0 auto;
+  width: auto;
+  margin: 0;
+  position: relative;
+
+  &::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 8px;
+    background: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
 }
 
 .reviews__wrapper {
+  width: 260px;
+  margin: 0 auto;
   padding: 30px;
   padding-top: 25px;
-  padding-bottom: 45px;
-  // background-color: #DBFFF5; /*временное оформление*/
+  padding-bottom: 52px;
 }
 
 .reviews__title {
@@ -37,16 +50,47 @@
 }
 
 .reviews__slider {
-  width: 260px; /*временное оформление*/
+  height: 50px;
   margin-bottom: 37px;
   border: 1px solid #ececec;
+  display: flex;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 50px;
+    background-color: #ececec;
+    left: 50%;
+  }
+}
+
+.reviews__slider button {
+  font-size: 0;
+  width: 50%;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    fill: #666666;
+  }
+
+  &:active {
+    fill: #b2b2b2;
+  }
 }
 
 @media (min-width: 768px) {
   .reviews {
     width: auto;
     margin: 0;
-    padding-bottom: 96px;
+    padding-bottom: 102px;
+
+    &::before{
+      height: 17px;
+    }
   }
 
   .reviews__wrapper {
@@ -56,6 +100,22 @@
     flex-direction: column;
     position: relative;
     @include container;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -57px;
+      left: -50px;
+      width: 350px;
+      height: 457px;
+      z-index: -1;
+      background-image: url(../img/review@1x.jpg);
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url(../img/review@2x.jpg);
   }
 
   .reviews__title {
@@ -86,13 +146,21 @@
   .reviews__slider  {
     position: absolute;
     right: 0;
-    bottom: 0px;
+    bottom: -3px;
+    width: 174px;
+    border: none;
+    &::before {
+      content: none;
+    }
   }
 }
 
 @media (min-width: 1150px) {
   .reviews {
-    padding-bottom: 130px;
+    padding-bottom: 155px;
+    &::before{
+      height: 23px;
+    }
   }
 
   .reviews__title {
@@ -119,5 +187,16 @@
     position: absolute;
     right: 0;
     margin-top: 11px;
+  }
+
+  .reviews__wrapper {
+    &::before {
+      top: -47px;
+      left: 0px;
+    }
+  }
+
+  .reviews__slider  {
+    bottom: -3px;
   }
 }
