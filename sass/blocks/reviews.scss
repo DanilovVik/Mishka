@@ -20,7 +20,7 @@
   margin: 0 auto;
   padding: 30px;
   padding-top: 25px;
-  padding-bottom: 50px;
+  padding-bottom: 52px;
 }
 
 .reviews__title {
@@ -86,7 +86,7 @@
   .reviews {
     width: auto;
     margin: 0;
-    padding-bottom: 96px;
+    padding-bottom: 102px;
 
     &::before{
       height: 17px;
@@ -146,7 +146,7 @@
   .reviews__slider  {
     position: absolute;
     right: 0;
-    bottom: 0px;
+    bottom: -3px;
     width: 174px;
     border: none;
     &::before {
@@ -157,7 +157,7 @@
 
 @media (min-width: 1150px) {
   .reviews {
-    padding-bottom: 130px;
+    padding-bottom: 155px;
     &::before{
       height: 23px;
     }
@@ -187,5 +187,16 @@
     position: absolute;
     right: 0;
     margin-top: 11px;
+  }
+
+  .reviews__wrapper {
+    &::before {
+      top: -47px;
+      left: 0px;
+    }
+  }
+
+  .reviews__slider  {
+    bottom: -3px;
   }
 }
