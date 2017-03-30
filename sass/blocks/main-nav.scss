@@ -1,6 +1,7 @@
 .main-nav {
   position: relative;
   z-index: 1;
+  top: 1px;
 }
 
 .main-nav__wrapper {
@@ -73,10 +74,6 @@
 
 .main-nav__item {
   border-bottom: 1px solid #ececec;
-}
-
-.main-nav__list {
-  border-top: 1px solid #ececec;
 }
 
 .main-nav__item a {

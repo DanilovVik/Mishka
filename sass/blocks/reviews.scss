@@ -115,7 +115,11 @@
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url(../img/review@2x.jpg);
+    .reviews__wrapper {
+      &::before {
+        background-image: url(../img/review@2x.jpg);
+      }
+    }
   }
 
   .reviews__title {
