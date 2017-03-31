@@ -19,7 +19,7 @@
   border: none;
   position: absolute;
   z-index: 3;
-  top: -50px;
+  top: -51px;
   left: 50%;
   margin-left: 106px;
 }
@@ -125,7 +125,6 @@ a.main-nav__item-active {
   fill: #d3d2d2;
 }
 
-
 @media (max-width: 767px) {
   .main-nav--closed .main-nav__item {
     display: none;
@@ -200,6 +199,7 @@ a.main-nav__item-active {
 
   .main-nav__item--basket {
     padding-top: 30px;
+    padding-bottom: 33px;
     padding-left: 83px;
     border-left: 1px solid #ececec;
   }
@@ -251,10 +251,11 @@ a.main-nav__item-active {
   }
 
   .main-nav__list-promo {
-    display: block;
     display: flex;
     margin-top: 25px;
     font-size: 15px;
+    position: absolute;
+    left: 0;
   }
 
   .main-nav__item--new-product {

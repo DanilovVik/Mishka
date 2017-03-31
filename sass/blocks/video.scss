@@ -62,7 +62,7 @@
 
   &:active {
     width: 81px;
-    height: 86px;
+    // height: 86px;
     opacity: 0.9;
     top: 35px;
     left: 90px;
@@ -144,11 +144,13 @@
 
     &:active {
       width: 81px;
-      height: 86px;
+      // height: 86px;
       opacity: 0.9;
       top: 195px;
       left: 294px;
-      background-size: 81px 86px;
+      background-size: 81px 68px;
+      // ie
+      height: 68px;
     }
   }
 }
@@ -217,11 +219,13 @@
 
     &:active {
       width: 81px;
-      height: 86px;
+      // height: 86px;
       opacity: 0.9;
       top: 189px;
       left: 305px;
-      background-size: 81px 86px;
+      background-size: 81px 68px;
+      // ie
+      height: 68px;
     }
   }
 }

@@ -1,7 +1,7 @@
-.contacts {
-  width: auto;
-  margin: 0 auto;
-}
+// .contacts {
+  // width: auto;
+  // margin: 0 auto;
+// }
 
 .contacts__btn {
   width: 260px;
@@ -9,10 +9,10 @@
 }
 
 .contact__wrapper {
-  padding-top: 35px;
-  padding-bottom: 40px;
-  display: flex;
-  flex-direction: column;
+  padding-top: 34px;
+  padding-bottom: 39px;
+  // display: flex;
+  // flex-direction: column;
 }
 
 .contacts__title {
@@ -28,9 +28,10 @@
   line-height: 30px;
   color: #444444;
   border-collapse: collapse;
+  display: block;
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
 }
 
 .contacts__name-address {
@@ -48,6 +49,7 @@
 
 .contacts__img {
   display: block;
+  width: 260px;
   margin: 0 auto;
 }
 
@@ -80,15 +82,15 @@
 }
 
 @media (min-width: 768px) {
-  .contacts {
-    width: auto;
-    margin: 0 ;
-  }
+  // .contacts {
+    // width: auto;
+    // margin: 0;
+  // }
 
   .contact__wrapper {
     padding: 0;
-    padding-top: 60px;
-    padding-bottom: 58px;
+    padding-top: 61px;
+    padding-bottom: 56px;
     margin-left: -6px;
   }
 
@@ -119,7 +121,7 @@
   }
 
   .contacts__map {
-    margin-bottom: 55px;
+    margin-bottom: 57px;
   }
 
   .contacts__btn {
@@ -135,16 +137,15 @@
   .contacts__address tr {
     display: block;
     width: 298px;
-
   }
 
   .contacts__email {
     float: left;
+    padding-right: 35px;
   }
 
   .contacts__street {
     float: right;
-    padding-right: 35px;
   }
 }
 
@@ -152,8 +153,9 @@
   .contact__wrapper {
     position: relative;
     padding-top: 73px;
-    padding-bottom: 106px;
-    @include container;
+    padding-bottom: 105px;
+    width: 1050px;
+    margin: 0 auto;
   }
 
   .contacts__title {
@@ -172,7 +174,7 @@
   .contacts__address {
     width: 298px;
     margin-left: 175px;
-    margin-bottom: 77px;
+    margin-bottom: 78px;
   }
 
   .contacts__address tr {
@@ -192,7 +194,7 @@
   .contacts__map {
     margin: 0;
     position: absolute;
-    top: 71px;
+    top: 72px;
     right: 0;
     width: 525px;
     height: 457px;

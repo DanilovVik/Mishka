@@ -74,8 +74,13 @@
   }
 
   .product img {
-    width: 334px;/*временное оформление*/
-    height: 334px;/*временное оформление*/
+    width: 334px;
+    height: 334px;
+  }
+
+  // ie
+  .product__title {
+    width: 270px;
   }
 
   .product__title--link {
@@ -124,8 +129,8 @@
   }
 
   .product img {
-    width: 316px;/*временное оформление*/
-    height: 462px;/*временное оформление*/
+    width: 316px;
+    height: 462px;
   }
 
   .product__description {
@@ -147,5 +152,9 @@
     &:active {
       box-shadow: 0px 3px 15px 1px rgba(0,0,0,0.1);
     }
+  }
+
+  .product__title {
+    width: auto;
   }
 }
