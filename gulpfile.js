@@ -114,10 +114,10 @@ gulp.task("build", function(fn) {
     "clean",
     "copy",
     "style",
-    "images",
-    "symbols",
-    "compress",
-    "htmlreplace",
+    // "images",
+    // "symbols",
+    // "compress",
+    // "htmlreplace",
     fn
     );
 });
