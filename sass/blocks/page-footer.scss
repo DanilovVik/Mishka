@@ -57,7 +57,7 @@
 
   .page-footer__wrapper {
     padding: 0;
-    padding-top: 48px;
+    padding-top: 52px;
     padding-bottom: 42px;
     display: flex;
     justify-content: space-between;
@@ -74,13 +74,20 @@
     padding-top: 0;
     margin-top: 12px;
     border-top: none;
+    display: flex;
   }
 
   .page-footer__copyright--link {
-    padding-right: 110px;
+    // padding-right: 110px;
+
+    // margin-right: 54px;
+    // align-self: flex-starts;
+    // padding-right: 54px;
   }
 
   .page-footer__copyright--link svg {
-    right: -56px;
+    // right: -56px;
+    margin-top: -5px;
+    // margin-left: 2px;
   }
 }

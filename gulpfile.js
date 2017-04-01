@@ -115,9 +115,9 @@ gulp.task("build", function(fn) {
     "copy",
     "style",
     // "images",
-    // "symbols",
-    // "compress",
-    // "htmlreplace",
+    "symbols",
+    "compress",
+    "htmlreplace",
     fn
     );
 });
