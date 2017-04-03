@@ -158,14 +158,14 @@
 }
 
 .form__list--name input {
-  padding-bottom: 13px;
+  padding-bottom: 15px;
   padding-top: 15px;
   border: none;
   border-bottom: 2px solid #000000;
 }
 
 .form__list--name .form__item {
-  margin-bottom: 19px;
+  margin-bottom: 18px;
 }
 
 .form__list--tel {
@@ -177,7 +177,6 @@
   border: none;
   width: 260px;
   border-bottom: 2px solid #000000;
-
   padding-bottom: 15px;
 
   &--tel {
@@ -282,6 +281,14 @@
     margin: 0;
   }
 
+  .form__field {
+    font-size: 18px;
+  }
+
+  .form__list--name .form__item {
+    margin-bottom: 11px;
+  }
+
   .form__item-content-container,
   .form__item-wrapper--type,
   .form__item-wrapper--name,
@@ -330,7 +337,7 @@
   }
 
   .form__item-wrapper--name .form__title {
-    top: 25px;
+    top: 27px;
   }
 
   .form__radio,
@@ -408,7 +415,7 @@
   }
 
   .form__item-wrapper--name {
-    padding-top: 26px;
+    padding-top: 23px;
   }
 
   .form__list--name label {
@@ -418,7 +425,7 @@
 
   .form__list--name input {
     width: 354px;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
     padding-left: 18px;
   }
 
@@ -427,7 +434,7 @@
   }
 
   .form__item-wrapper--name {
-    margin-bottom: -7px;
+    margin-bottom: -1px;
   }
 
   .form__field--tel,
@@ -438,12 +445,16 @@
     margin-bottom: -20px;
   }
 
+  .form__field--email {
+    margin-top: -11px;
+  }
+
   .form__item-wrapper--tel {
     padding-top: 41px;
   }
 
   .form__item-wrapper--tel .form__title {
-    top: 6px;
+    top: 9px;
   }
 
   .form__item-wrapper--email .form__title {
